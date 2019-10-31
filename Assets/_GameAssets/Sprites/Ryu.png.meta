@@ -1,0 +1,1180 @@
+fileFormatVersion: 2
+guid: 60fb9564836645240a9aa6c5a35ec3f5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1326918646119068930
+    second: Ryu Hayabusa_0
+  - first:
+      213: -8136166758485449130
+    second: Ryu Hayabusa_1
+  - first:
+      213: 3398680658945566956
+    second: Ryu Hayabusa_2
+  - first:
+      213: 1968179285226073208
+    second: Ryu Hayabusa_3
+  - first:
+      213: 1805243113999158796
+    second: Ryu Hayabusa_4
+  - first:
+      213: -6001874390224920549
+    second: Ryu Hayabusa_5
+  - first:
+      213: -1220641231373768368
+    second: Ryu Hayabusa_6
+  - first:
+      213: 6194308991136529691
+    second: Ryu Hayabusa_7
+  - first:
+      213: 7488806148202999989
+    second: Ryu Hayabusa_8
+  - first:
+      213: 6543463863106449156
+    second: Ryu Hayabusa_9
+  - first:
+      213: 4945821044542175826
+    second: Ryu Hayabusa_10
+  - first:
+      213: -9056313476917943669
+    second: Ryu Hayabusa_11
+  - first:
+      213: -7924141475174160083
+    second: Ryu Hayabusa_12
+  - first:
+      213: 1469843020053604325
+    second: Ryu Hayabusa_13
+  - first:
+      213: 1692011024546070379
+    second: Ryu Hayabusa_14
+  - first:
+      213: 7732939942624178620
+    second: Ryu Hayabusa_15
+  - first:
+      213: 8096986792443870766
+    second: Ryu Hayabusa_16
+  - first:
+      213: 2550921780374235363
+    second: Ryu Hayabusa_17
+  - first:
+      213: -180688774435751608
+    second: Ryu Hayabusa_s1
+  - first:
+      213: -6774183685635402248
+    second: Ryu Hayabusa_s3
+  - first:
+      213: 7773803721036111798
+    second: Ryu Hayabusa_s5
+  - first:
+      213: -277815456473473887
+    second: Ryu Hayabusa_s6
+  - first:
+      213: -4171664934021412468
+    second: Ryu Hayabusa_s7
+  - first:
+      213: 1578348364400821345
+    second: Ryu Hayabusa_23
+  - first:
+      213: -7589308858664263226
+    second: Ryu Hayabusa_24
+  - first:
+      213: 1542988218782125807
+    second: Ryu Hayabusa_25
+  - first:
+      213: 7055744998127524796
+    second: Ryu Hayabusa_26
+  - first:
+      213: 8320933277800769272
+    second: Ryu Hayabusa_27
+  - first:
+      213: -1195926131663904122
+    second: Ryu Hayabusa_s2
+  - first:
+      213: 7085300689227691461
+    second: Ryu Hayabusa_s4
+  - first:
+      213: -1226181016370736443
+    second: Ryu Hayabusa_30
+  - first:
+      213: -872347086732092914
+    second: Ryu Hayabusa_31
+  - first:
+      213: -3399800312161913461
+    second: Ryu Hayabusa_32
+  - first:
+      213: 7651671491884233820
+    second: Ryu Hayabusa_33
+  - first:
+      213: -3005458784010999461
+    second: Ryu Hayabusa_34
+  - first:
+      213: -2949784112093050426
+    second: Ryu Hayabusa_35
+  - first:
+      213: -2777374963397633122
+    second: Ryu Hayabusa_36
+  - first:
+      213: -5192575026740125865
+    second: Ryu Hayabusa_37
+  - first:
+      213: 8103170752169093742
+    second: Ryu Hayabusa_38
+  - first:
+      213: 810356842106780422
+    second: Ryu Hayabusa_39
+  - first:
+      213: 7677874156459352205
+    second: Ryu Hayabusa_40
+  - first:
+      213: 8235264288801985019
+    second: Ryu Hayabusa_41
+  - first:
+      213: 4392727999144435258
+    second: Ryu Hayabusa_42
+  - first:
+      213: 3005646593500076966
+    second: Ryu Hayabusa_43
+  - first:
+      213: -5852761502793594565
+    second: Ryu Hayabusa_44
+  - first:
+      213: 1888447619893692787
+    second: Ryu Hayabusa_45
+  - first:
+      213: -975047406960908379
+    second: Ryu Hayabusa_46
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ryu Hayabusa_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 208
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57605e092bc528041bdfff0e21a0e4e6
+      internalID: -1326918646119068930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 208
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 200882c9d822aea42ab30ffb78c4dc17
+      internalID: -8136166758485449130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 208
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056e7a6d66ab9894ba88bdce751f3419
+      internalID: 3398680658945566956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 208
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ba6eb0498499f4394c7d0b25915f51
+      internalID: 1968179285226073208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_4
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 208
+        width: 38
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c0b065291448644be8dd6b00f85993
+      internalID: 1805243113999158796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 208
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cdaa132946ef9548bf6e90f03f3abf2
+      internalID: -6001874390224920549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_7
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 208
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f1d9e179354e2c49adbbb13556acef2
+      internalID: 6194308991136529691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_8
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 208
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74454578337709944ae5611d80345eb9
+      internalID: 7488806148202999989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_9
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 208
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66592a56f769ca499152c38a24d6e24
+      internalID: 6543463863106449156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_10
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 208
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99859c050320c974eb3f3ed201cbc65a
+      internalID: 4945821044542175826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_11
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 176
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450caea5698dfa24ea04ba64a0fd1bf6
+      internalID: -9056313476917943669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 176
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b960cef2c1f6c044ac02376e96613e4
+      internalID: -7924141475174160083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_13
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 176
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf83624a79f82474991a5ca82ec4d454
+      internalID: 1469843020053604325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_14
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 176
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8168803bf776e4e4da5fa20e3e31bac5
+      internalID: 1692011024546070379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_15
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 176
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc457879a2475d458590bc3712a72c5
+      internalID: 7732939942624178620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_16
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 176
+        width: 39
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc648ce29ff0de3478eaf36cfa45233a
+      internalID: 8096986792443870766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_s1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 136
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c768b56a0c4e2464c82bbb60e56c7b77
+      internalID: -180688774435751608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_s3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 136
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2db4879a8a91e8d40be0528c7df69f1f
+      internalID: -6774183685635402248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_s5
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 136
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49b7b5d2528dfb4ba078599b7f63d13
+      internalID: 7773803721036111798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_s6
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 136
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b34cf7411c0fa45a07cf2de502bd45
+      internalID: -277815456473473887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_s7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 136
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3879aeb40344a4246ad260b5bde46b01
+      internalID: -4171664934021412468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 136
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306ffbdf3d86ba24fb630b0f56c8c211
+      internalID: 1578348364400821345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_24
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 136
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34cf873854174574ab4eb1e05e1a7d90
+      internalID: -7589308858664263226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_25
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 136
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299868e9bc7de694486333fcc3acb144
+      internalID: 1542988218782125807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_26
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 136
+        width: 39
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51971dd8db474ba46afc866ab30de2a8
+      internalID: 7055744998127524796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_s2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 136
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e552484c9bf437c428d401da553e67b8
+      internalID: -1195926131663904122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_s4
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 136
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9859b10f62b8e145989653e3a29c2bb
+      internalID: 7085300689227691461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_30
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 98
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 313d0716f3defbd4fb01aee53e5e2f9e
+      internalID: -1226181016370736443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_31
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 96
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7f6b985030db446b8b74ac2cde0681
+      internalID: -872347086732092914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_32
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 96
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbcfb1524ab0f4642a7da1e038a4c902
+      internalID: -3399800312161913461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b20210d42431b4dba501852368eddc
+      internalID: 7651671491884233820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_34
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 96
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed01e480bb4c154790d0c6189479110
+      internalID: -3005458784010999461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_36
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 96
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10dd0251ada506f4a87f9dbc73617ab0
+      internalID: -2777374963397633122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_37
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 57
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609b9afde716539459f431b2f363f79c
+      internalID: -5192575026740125865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_38
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 59
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e28a5f4c34ab9448ad104f9d968ca09
+      internalID: 8103170752169093742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_39
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 56
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5db89470e0845448f6c3f2d233d077
+      internalID: 810356842106780422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_40
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 56
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20828b2d63423ae47b40e535079ccf8f
+      internalID: 7677874156459352205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_41
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 56
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53c14ce9ba50e24985a11f548e4129d
+      internalID: 8235264288801985019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_42
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 57
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9d6656b97bb6548a267a85d79796b5
+      internalID: 4392727999144435258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_43
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 56
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a1477f84117a3469b740fddb37369b
+      internalID: 3005646593500076966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_44
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 56
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf8c0e4a6b9f0d4394e65e4d9269bcd
+      internalID: -5852761502793594565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_45
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 56
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1635651bc2566324c8b13ef220fb20dc
+      internalID: 1888447619893692787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_46
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 56
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed6883e7c694f942bdc9d469b964dbc
+      internalID: -975047406960908379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ryu Hayabusa_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 84
+        width: 46
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d1331b61f44e942accf9b94a0f35cf
+      internalID: -1220641231373768368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
