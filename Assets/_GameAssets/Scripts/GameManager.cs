@@ -6,54 +6,54 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] int numeroCorazones;
+    /*[SerializeField] int numeroCorazones;
     [SerializeField] int numeroCorazonesMax;
     [SerializeField] float vidaCorazon;
-    [SerializeField] float vidaCorazonMax;
+    [SerializeField] float vidaCorazonMax;*/
+    [SerializeField] float vida;
+    [SerializeField] float vidaMax;
+    [SerializeField] float poder;
+    [SerializeField] float podernMax;
     [SerializeField] int numeroVidas;
     [SerializeField] int numeroVidasMax;
     [SerializeField] int puntuacion;
+    [SerializeField] int puntuacionMax;
+    [SerializeField] int tiempo;
+    [SerializeField] int tiempoMax;
     private UIManager ui;
     private const string PARAM_X = "x";
     private const string PARAM_Y = "y";
     private const string VIDAS = "VIDAS";
+    private const string MEJOR_PUNTUACION_1_1 = "MEJOR_PUNTUACION_1_1";
     private bool checkpointActivo = false;
 
     private void Start()
     {
         ui = GameObject.Find("UIManager").GetComponent<UIManager>();
+        IniciarParametros();
+
     }
 
-    public int GetNumeroCorazones()
+    /*public int GetNumeroCorazones()
     {
         return numeroCorazones;
     }
-
+    */
     public bool QuitarVida(float dano)
     {
-        float resto = vidaCorazon - dano;
-        vidaCorazon = resto;
+        vida -= dano;
 
-        if (vidaCorazon <= 0)
+        if (vida <= 0)
         {
-            ui.ActualizarVida(numeroCorazones, 0);
-            numeroCorazones--;
-            vidaCorazon = vidaCorazonMax;
-
-            if (numeroCorazones == 0)
-            {
-                RestarVida();
-                return true;
-            }
+            ui.ActualizarVida(0);
+            RestarVida();
+            return true;
         }
-
-        if (resto < 0)
+        else
         {
-            QuitarVida(resto * -1);
+            ui.ActualizarVida(vida/vidaMax);
+            return false;
         }
-
-        ui.ActualizarVida(numeroCorazones, vidaCorazon);
-        return false;
     }
 
     private void RestarVida()
@@ -89,11 +89,41 @@ public class GameManager : MonoBehaviour
         return new Vector2(x, y);
     }
 
-    public void ResetGame()
+    public void IniciarParametros()
     {
-        numeroCorazones = numeroCorazonesMax;
-        vidaCorazon = vidaCorazonMax;
-        ui.ResetVida();
+        /*numeroCorazones = numeroCorazonesMax;
+        vidaCorazon = vidaCorazonMax;*/
+        vida = vidaMax;
+        poder = 0;
+        numeroVidas = PlayerPrefs.GetInt(VIDAS, numeroVidasMax);
+        puntuacion = 0;
+        puntuacionMax = PlayerPrefs.GetInt(MEJOR_PUNTUACION_1_1, 0);
+        tiempo = tiempoMax;        
+        ui.ActualizarVida(vida/vidaMax);
+        ui.ActualizarPoder(poder/podernMax);
         ui.ActualizarVidas(numeroVidas);
+        ui.ActualizarTiempo(FormatearTiempo(tiempo));
+        ui.ActualizarPuntuacion(puntuacion);
+        ui.ActualizarPuntuacionMax(puntuacionMax);
+    }
+
+    private string FormatearTiempo (int tiempo)
+    {
+        string stringTiempo;
+        int minutos;
+        int segundos;
+
+        if (tiempo < 60)
+        {
+            stringTiempo = "0:" + tiempo.ToString("00");
+        }
+        else
+        {
+            minutos = tiempo / 60;
+            segundos = tiempo - (minutos * 60);
+            stringTiempo = minutos.ToString("00") + ":" + segundos.ToString("00");
+        }
+
+        return stringTiempo;
     }
 }

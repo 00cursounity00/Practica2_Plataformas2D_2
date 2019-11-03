@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
         animator = GetComponent<Animator>();
         audios = GetComponents<AudioSource>();
         //audioMusic = GameObject.Find("MusicManager").GetComponent<AudioSource>();
-        IniciarPosicion();
+        IniciarJuego();
     }
 
     void Update()
@@ -126,8 +126,7 @@ public class Player : MonoBehaviour
         {
             if (gm.QuitarVida(dano))
             {
-                IniciarPosicion();
-                gm.ResetGame();
+                IniciarJuego();
             }
             else
             {
@@ -231,11 +230,12 @@ public class Player : MonoBehaviour
         return false;
     }
 
-    private void IniciarPosicion()
+    private void IniciarJuego()
     {
         rb.velocity = Vector2.zero;
         transform.position = gm.ObtenerCheckpoint(posicionInicial);
         GameObject.Find("ParallaxBackground").transform.position = transform.position;
+        gm.IniciarParametros();
     }
     
     private void Parpadeo ()

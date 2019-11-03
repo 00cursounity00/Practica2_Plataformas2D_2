@@ -485,7 +485,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &190565548
 RectTransform:
   m_ObjectHideFlags: 0
@@ -650,7 +650,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: 100
 --- !u!222 &190989781
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1127,7 +1127,7 @@ RectTransform:
   - {fileID: 1307302858}
   - {fileID: 1505257556}
   m_Father: {fileID: 1166121559}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.45245272, y: 0.87341267}
   m_AnchorMax: {x: 0.550954, y: 1}
@@ -2589,6 +2589,123 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &642392010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 642392013}
+  - component: {fileID: 642392012}
+  - component: {fileID: 642392011}
+  - component: {fileID: 642392014}
+  m_Layer: 0
+  m_Name: small Potions_12
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &642392011
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642392010}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 87390fa6d3e9c1d46b4d6ddd0734b561, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &642392012
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642392010}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300024, guid: ddf8838d0a06d8d4c9dec9e3bed69260, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.8125, y: 1.125}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &642392013
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642392010}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.741846, y: 3.306846, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &642392014
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642392010}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.28125}
+  serializedVersion: 2
+  m_Radius: 0.28125
 --- !u!1 &681477715
 GameObject:
   m_ObjectHideFlags: 0
@@ -3096,7 +3213,7 @@ GameObject:
   - component: {fileID: 821046669}
   - component: {fileID: 821046668}
   m_Layer: 5
-  m_Name: Fill
+  m_Name: FillVidaPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4971,13 +5088,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1188a03b41631774d9d6cc1fa9157883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numeroCorazones: 5
-  numeroCorazonesMax: 5
-  vidaCorazon: 1
-  vidaCorazonMax: 1
+  vida: 0
+  vidaMax: 20
+  poder: 0
+  podernMax: 20
   numeroVidas: 3
   numeroVidasMax: 3
   puntuacion: 0
+  puntuacionMax: 0
+  tiempo: 180
+  tiempoMax: 180
 --- !u!4 &959935689
 Transform:
   m_ObjectHideFlags: 0
@@ -5891,7 +6011,7 @@ GameObject:
   - component: {fileID: 1075074517}
   - component: {fileID: 1075074518}
   m_Layer: 5
-  m_Name: SlideVida
+  m_Name: SliderVidaPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6121,7 +6241,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1091366299}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.213646, y: 6.018384, z: -10}
+  m_LocalPosition: {x: 14.796055, y: 6.024518, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6257,7 +6377,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1129871515}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.446251, y: 6.095, z: -10}
+  m_LocalPosition: {x: 12.250216, y: 6.095, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1725540977}
@@ -6374,8 +6494,8 @@ RectTransform:
   - {fileID: 983260501}
   - {fileID: 190565548}
   - {fileID: 260656727}
-  - {fileID: 1431091740}
   - {fileID: 347977236}
+  - {fileID: 1431091740}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 25.612001}
@@ -10028,7 +10148,7 @@ RectTransform:
   - {fileID: 329981398}
   - {fileID: 1406897783}
   m_Father: {fileID: 1166121559}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.550954, y: 0.87341267}
   m_AnchorMax: {x: 1, y: 1}
@@ -10216,7 +10336,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 3:00
+  m_Text: 0
 --- !u!222 &1505257559
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10761,9 +10881,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1166121558}
-  panelCorazones: {fileID: 190565547}
-  prefabCorazon: {fileID: 8558573998744550310, guid: 1200d75a372565640836f6ebbe3aa52a,
-    type: 3}
+  textoPuntuacion: {fileID: 190989780}
+  textoPuntuacionMax: {fileID: 1874099801}
+  textoVidas: {fileID: 103026532}
+  textoTiempo: {fileID: 1505257558}
+  sliderVida: {fileID: 1075074518}
+  sliderPoder: {fileID: 1930203675}
 --- !u!1 &1725540976
 GameObject:
   m_ObjectHideFlags: 3
@@ -13599,7 +13722,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: 10500
 --- !u!222 &1874099802
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14030,7 +14153,7 @@ GameObject:
   - component: {fileID: 1930203674}
   - component: {fileID: 1930203675}
   m_Layer: 5
-  m_Name: SlidePoder
+  m_Name: SliderPoder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
