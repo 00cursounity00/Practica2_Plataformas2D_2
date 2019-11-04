@@ -58,66 +58,69 @@ public class Background : MonoBehaviour
 
     void FixedUpdate()
     {
-        x = playerRb.velocity.x;
-        y = playerRb.velocity.y;
-
-        //print(posicionX + "  --  " + playerTransform.position.x);
-
-        if (Mathf.Abs(posicionX - playerTransform.position.x) > 0.01f || Mathf.Abs(posicionY - playerTransform.position.y) > 0.01f)
+        if (playerRb != null)
         {
-            //if (Mathf.Abs(x) > 0 || Mathf.Abs(y) > 0)
-            //{
-            if (Mathf.Abs(posicionX - playerTransform.position.x) > 0.01f)
-            {
-                factorX = (transform.position.x - transform.position.x + x) * Time.deltaTime * velocidadScrollX;
-            }
-            else
-            {
-                factorX = 0;
-            }
+            x = playerRb.velocity.x;
+            y = playerRb.velocity.y;
 
-            if (Mathf.Abs(posicionY - playerTransform.position.y) > 0.01f)
-            {
-                difY = transform.position.y - playerTransform.position.y;
+            //print(posicionX + "  --  " + playerTransform.position.x);
 
-                if (difY < distanciaScrollBottom && difY > -distanciaScrollTop)
+            if (Mathf.Abs(posicionX - playerTransform.position.x) > 0.01f || Mathf.Abs(posicionY - playerTransform.position.y) > 0.01f)
+            {
+                //if (Mathf.Abs(x) > 0 || Mathf.Abs(y) > 0)
+                //{
+                if (Mathf.Abs(posicionX - playerTransform.position.x) > 0.01f)
                 {
-                    factorY = (transform.position.y - transform.position.y + y) * Time.deltaTime * velocidadScrollY;
+                    factorX = (transform.position.x - transform.position.x + x) * Time.deltaTime * velocidadScrollX;
                 }
                 else
                 {
-                    factorY = (transform.position.y - transform.position.y + y) * Time.deltaTime;
+                    factorX = 0;
                 }
+
+                if (Mathf.Abs(posicionY - playerTransform.position.y) > 0.01f)
+                {
+                    difY = transform.position.y - playerTransform.position.y;
+
+                    if (difY < distanciaScrollBottom && difY > -distanciaScrollTop)
+                    {
+                        factorY = (transform.position.y - transform.position.y + y) * Time.deltaTime * velocidadScrollY;
+                    }
+                    else
+                    {
+                        factorY = (transform.position.y - transform.position.y + y) * Time.deltaTime;
+                    }
+                }
+                else
+                {
+                    factorY = 0;
+                }
+
+                transform.Translate(new Vector2(factorX, factorY));
+                posicionX = playerTransform.position.x;
+                posicionY = playerTransform.position.y;
+                //}
             }
-            else
+
+            difX = playerTransform.position.x - transform.position.x;
+            //print("playerX: " + playerTransform.position.x + "  --  x:" + transform.position.x + "  --  Find:" + GameObject.Find(nombreBgLeft));
+            if (difX > distanciaSpawnRight && GameObject.Find(nombreBgRight) == null)
             {
-                factorY = 0;
+                GameObject go = Instantiate(gameObject, new Vector2(transform.position.x + 38.4f, transform.position.y), transform.rotation);
+                go.name = nombreBgRight;
+                go.GetComponent<Background>().EstablecrBg(numeroBg + 1, nombreBgBase);
+            }
+            else if (difX < -distanciaSpawnLeft && GameObject.Find(nombreBgLeft) == null)
+            {
+                GameObject go = Instantiate(gameObject, new Vector2(transform.position.x - 38.4f, transform.position.y), transform.rotation);
+                go.name = nombreBgLeft;
+                go.GetComponent<Background>().EstablecrBg(numeroBg - 1, nombreBgBase);
             }
 
-            transform.Translate(new Vector2(factorX, factorY));
-            posicionX = playerTransform.position.x;
-            posicionY = playerTransform.position.y;
-            //}
-        }
-
-        difX = playerTransform.position.x - transform.position.x;
-        //print("playerX: " + playerTransform.position.x + "  --  x:" + transform.position.x + "  --  Find:" + GameObject.Find(nombreBgLeft));
-        if (difX > distanciaSpawnRight && GameObject.Find(nombreBgRight) == null)
-        {
-            GameObject go = Instantiate(gameObject, new Vector2(transform.position.x + 38.4f, transform.position.y), transform.rotation);
-            go.name = nombreBgRight;
-            go.GetComponent<Background>().EstablecrBg(numeroBg + 1, nombreBgBase);
-        }
-        else if (difX < -distanciaSpawnLeft && GameObject.Find(nombreBgLeft) == null)
-        {
-            GameObject go = Instantiate(gameObject, new Vector2(transform.position.x - 38.4f, transform.position.y), transform.rotation);
-            go.name = nombreBgLeft;
-            go.GetComponent<Background>().EstablecrBg(numeroBg - 1, nombreBgBase);
-        }
-
-        if (difX > distanciaDestruccionRight || difX < -distanciaDestruccionLeft)
-        {
-            Destroy(gameObject);
+            if (difX > distanciaDestruccionRight || difX < -distanciaDestruccionLeft)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

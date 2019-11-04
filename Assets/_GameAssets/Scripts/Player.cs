@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField] float cadenciaDisparo;
     [SerializeField] float fuerzaSalto;
     [SerializeField] GameObject prefabProyectil;
+    [SerializeField] GameObject explosionPlayer;
     [SerializeField] Transform puntoDisparoSuelo;
     [SerializeField] Transform puntoDisparoAire;
     [SerializeField] Transform detectorSuelo;
@@ -29,6 +30,7 @@ public class Player : MonoBehaviour
     private Vector2 posicionInicial;
     private int parpadeos = 0;
     private bool tieneCadencia = false;
+    private UIManager ui;
 
     void Start()
     {
@@ -37,6 +39,7 @@ public class Player : MonoBehaviour
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         animator = GetComponent<Animator>();
         audios = GetComponents<AudioSource>();
+        ui = GameObject.Find("UIManager").GetComponent<UIManager>();
         //audioMusic = GameObject.Find("MusicManager").GetComponent<AudioSource>();
         IniciarJuego();
     }
@@ -73,7 +76,7 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (animator.GetBool("recibiendoDano") == false)
+        if (animator.GetBool("recibiendoDano") == false && rb != null)
         {
             if (Mathf.Abs(x) > 0.1f)
             {
@@ -126,15 +129,33 @@ public class Player : MonoBehaviour
         {
             if (gm.QuitarVida(dano))
             {
-                IniciarJuego();
+                PerderVida();
             }
             else
             {
-                estadoPlayer = EstadoPlayer.recibiendoDano;
                 animator.SetBool("recibiendoDano", true);
                 Invoke("QuitarRecibirDano", 0.5f);
             }
+            estadoPlayer = EstadoPlayer.recibiendoDano;
         }
+    }
+
+    public void PerderVida()
+    {
+        GetComponent<SpriteRenderer>().enabled = false;
+        explosionPlayer.SetActive(true);
+        //rb.isKinematic = true;
+        //rb.velocity = Vector2.zero;
+        Destroy(rb);
+        ui.FundirNegro(1, 2);
+
+        foreach (CapsuleCollider2D cc in GetComponents<CapsuleCollider2D>())
+        {
+            cc.enabled = false;
+        }
+
+        GetComponent<BoxCollider2D>().enabled = false;
+        Invoke("ReiniciarJuego", 2);
     }
 
     private void QuitarRecibirDano()
@@ -186,7 +207,7 @@ public class Player : MonoBehaviour
 
     private void Saltar()
     {
-        if (ObtenerEnSuelo() || ObtenerEnAgua())
+        if ((ObtenerEnSuelo() || ObtenerEnAgua()) && rb != null)
         {
             rb.velocity = new Vector2(rb.velocity.x, fuerzaSalto);
             animator.SetTrigger("saltar");
@@ -216,6 +237,7 @@ public class Player : MonoBehaviour
                 cc.sharedMaterial = null;
             }
             GetComponent<BoxCollider2D>().sharedMaterial = null;
+            //GetComponent<PolygonCollider2D>().sharedMaterial = null;
             animator.SetBool("enSuelo", true);
             return true;
         }
@@ -226,6 +248,7 @@ public class Player : MonoBehaviour
         }
 
         GetComponent<BoxCollider2D>().sharedMaterial = pm2d;
+        //GetComponent<PolygonCollider2D>().sharedMaterial = pm2d;
         animator.SetBool("enSuelo", false);
         return false;
     }
@@ -233,9 +256,14 @@ public class Player : MonoBehaviour
     private void IniciarJuego()
     {
         rb.velocity = Vector2.zero;
-        transform.position = gm.ObtenerCheckpoint(posicionInicial);
+        transform.position = gm.ObtenerPosicion(posicionInicial);
         GameObject.Find("ParallaxBackground").transform.position = transform.position;
         gm.IniciarParametros();
+    }
+
+    private void ReiniciarJuego()
+    {
+        gm.ResetNivel();
     }
     
     private void Parpadeo ()

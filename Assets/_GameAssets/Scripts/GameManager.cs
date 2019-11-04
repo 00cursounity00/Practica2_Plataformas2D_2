@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] float vida;
     [SerializeField] float vidaMax;
     [SerializeField] float poder;
-    [SerializeField] float podernMax;
+    [SerializeField] float poderMax;
     [SerializeField] int numeroVidas;
     [SerializeField] int numeroVidasMax;
     [SerializeField] int puntuacion;
@@ -30,8 +31,18 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         ui = GameObject.Find("UIManager").GetComponent<UIManager>();
-        IniciarParametros();
+    }
 
+    private void Update()
+    {        
+        if (tiempo < 0)
+        {
+            StopCoroutine("CuentaAtras");
+        }
+        else
+        {
+            ui.ActualizarTiempo(FormatearTiempo(tiempo));
+        }
     }
 
     /*public int GetNumeroCorazones()
@@ -59,6 +70,16 @@ public class GameManager : MonoBehaviour
     private void RestarVida()
     {
         numeroVidas--;
+
+        if (numeroVidas < 0)
+        {
+            numeroVidas = numeroVidasMax;
+            PlayerPrefs.DeleteKey(PARAM_X);
+            PlayerPrefs.DeleteKey(PARAM_Y);
+        }
+
+        PlayerPrefs.SetInt(VIDAS, numeroVidas);
+        PlayerPrefs.Save();
     }
 
     public void SumarPuntos(int puntos)
@@ -72,18 +93,15 @@ public class GameManager : MonoBehaviour
         return PlayerPrefs.HasKey(PARAM_X);
     }
 
-    public void ActivarCheckpoint(Vector2 position)
+    public void GuardarPosicion(Vector2 position)
     {
-        PlayerPrefs.SetInt(VIDAS, numeroVidas);
         PlayerPrefs.SetFloat(PARAM_X, position.x);
         PlayerPrefs.SetFloat(PARAM_Y, position.y);
         PlayerPrefs.Save();
     }
 
-    public Vector2 ObtenerCheckpoint(Vector2 posicionInicial)
+    public Vector2 ObtenerPosicion(Vector2 posicionInicial)
     {
-        numeroVidas = PlayerPrefs.GetInt(VIDAS, numeroVidasMax);
-        ui.ActualizarVidas(numeroVidas);
         float x = PlayerPrefs.GetFloat(PARAM_X, posicionInicial.x);
         float y = PlayerPrefs.GetFloat(PARAM_Y, posicionInicial.y);
         return new Vector2(x, y);
@@ -100,11 +118,13 @@ public class GameManager : MonoBehaviour
         puntuacionMax = PlayerPrefs.GetInt(MEJOR_PUNTUACION_1_1, 0);
         tiempo = tiempoMax;        
         ui.ActualizarVida(vida/vidaMax);
-        ui.ActualizarPoder(poder/podernMax);
+        ui.ActualizarPoder(poder/poderMax);
         ui.ActualizarVidas(numeroVidas);
         ui.ActualizarTiempo(FormatearTiempo(tiempo));
         ui.ActualizarPuntuacion(puntuacion);
         ui.ActualizarPuntuacionMax(puntuacionMax);
+        ui.FundirNegro(0, 2);
+        StartCoroutine("CuentaAtras");
     }
 
     private string FormatearTiempo (int tiempo)
@@ -125,5 +145,48 @@ public class GameManager : MonoBehaviour
         }
 
         return stringTiempo;
+    }
+
+    public void RecargarVida(float vidaRecarga)
+    {
+        vida = vida + vidaRecarga;
+
+        if (vida > vidaMax)
+        {
+            vida = vidaMax;
+        }
+
+        ui.ActualizarVida(vida/vidaMax);
+    }
+
+    public void RecargarPoder(float poderRecarga)
+    {
+        poder = poder + poderRecarga;
+
+        if (poder > poderMax)
+        {
+            poder = poderMax;
+        }
+
+        ui.ActualizarPoder(poder/poderMax);
+    }
+
+    public void ResetNivel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    private IEnumerator CuentaAtras()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(1);
+            tiempo--;
+            if (tiempo == 0)
+            {
+                RestarVida();
+                GameObject.Find("Yago").GetComponent<Player>().PerderVida();
+            }
+        }
     }
 }

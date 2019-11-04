@@ -15,7 +15,7 @@ public class CheckPoint : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            gm.ActivarCheckpoint(transform.position);
+            gm.GuardarPosicion(transform.position);
             GetComponent<Animator>().SetBool("checkPoinActivado", true);
             Destroy(this);
         }

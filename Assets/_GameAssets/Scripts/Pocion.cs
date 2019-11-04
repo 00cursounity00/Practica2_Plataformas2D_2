@@ -6,19 +6,27 @@ public class Pocion : MonoBehaviour
 {
     [SerializeField] int tipo;
     [SerializeField] float cantidad;
+    private GameManager gm;
+    private bool recogida = false;
 
+    private void Start()
+    {
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && !recogida)
         {
+            recogida = true;
             if (tipo == 0)
             {
-                //collision.gameObject.GetComponent<Player>().RecargarVida(cantidad);
+                gm.RecargarVida(cantidad);
             }
-            else
+            else if (tipo == 1)
             {
-                //collision.gameObject.GetComponent<Player>().RecargarPoder(cantidad);
+                gm.RecargarPoder(cantidad);
             }
+            Destroy(gameObject);
         }
     }
 }

@@ -15,6 +15,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] Text textoTiempo;
     [SerializeField] Slider sliderVida;
     [SerializeField] Slider sliderPoder;
+    [SerializeField] Image pantallanegra;
 
     void Start()
     {
@@ -85,4 +86,9 @@ public class UIManager : MonoBehaviour
             corazon.GetComponent<Image>().fillAmount = 1;
         }
     }*/
+
+    public void FundirNegro(float alpha, float tiempo)
+    {
+        pantallanegra.CrossFadeAlpha (alpha, tiempo, true);
+    }
 }
