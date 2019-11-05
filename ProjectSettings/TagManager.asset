@@ -8,6 +8,9 @@ TagManager:
   - Enemigo
   - Suelo
   - Plataforma
+  - Proyectil
+  - Item
+  - PlataformaMovil
   layers:
   - Default
   - TransparentFX
@@ -18,9 +21,9 @@ TagManager:
   - 
   - 
   - Suelo
-  - 
-  - 
-  - 
+  - Items
+  - Enemigos
+  - Proyectiles
   - 
   - 
   - 

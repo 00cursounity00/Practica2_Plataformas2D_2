@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 5114147326753945268}
   - component: {fileID: 3867642074027119559}
   - component: {fileID: 680560585782671112}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DropedLava
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

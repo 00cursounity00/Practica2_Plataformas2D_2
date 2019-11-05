@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6370168364257799193}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bat
   m_TagString: Enemigo
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4952587840560780406}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: puntoDestino
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4952587840674674150}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: puntoOrigen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 4952587840864557416}
   - component: {fileID: 4952587840864557419}
   - component: {fileID: 4952587840864557418}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BatEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,6 +242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barraVida: {fileID: 5334038653330155595}
+  fillVida: {fileID: 0}
   vidaMax: 25
 --- !u!114 &4952587840864557418
 MonoBehaviour:
@@ -256,7 +257,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   origen: {fileID: 4952587840674674150}
-  destino: {fileID: 4952587840560780406}
+  destino1: {fileID: 0}
+  destino2: {fileID: 0}
   velocidad: 0.5
   distanciaDespertar: 4
   direccion: 1
@@ -271,7 +273,7 @@ GameObject:
   - component: {fileID: 5334038652265146795}
   - component: {fileID: 5334038652265146793}
   - component: {fileID: 5334038652265146792}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -342,7 +344,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5334038652629229459}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -378,7 +380,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5334038652709658105}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,7 +418,7 @@ GameObject:
   - component: {fileID: 5334038652871480758}
   - component: {fileID: 5334038652871480756}
   - component: {fileID: 5334038652871480759}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -489,7 +491,7 @@ GameObject:
   - component: {fileID: 5334038653189010288}
   - component: {fileID: 5334038653189010294}
   - component: {fileID: 5334038653189010289}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -561,7 +563,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5334038653330155594}
   - component: {fileID: 5334038653330155595}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -652,7 +654,7 @@ GameObject:
   - component: {fileID: 5334038653392517215}
   - component: {fileID: 5334038653392517214}
   - component: {fileID: 5334038653392517209}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
