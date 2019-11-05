@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     [SerializeField] Transform detectorSuelo;
     [SerializeField] LayerMask layerSuelo;
     [SerializeField] PhysicsMaterial2D pm2d;
+    [SerializeField] FixedJoystick variableJoystick;
     private AudioSource[] audios;
     private AudioSource audioMusic;
     private float x, y;
@@ -46,20 +47,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        x = Input.GetAxis("Horizontal");
-        y = Input.GetAxis("Vertical");
         ObtenerEnSuelo();
-        if (x > 0)
-        {
-            //x = 1;
-            transform.rotation = Quaternion.Euler(0, 0, 0);
-        }
-
-        else if (x < 0)
-        {
-            //x = -1;
-            transform.rotation = Quaternion.Euler(0, 180, 0);
-        }
 
         if (Input.GetButtonDown("Fire1"))
         {
@@ -76,12 +64,40 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            x = variableJoystick.Horizontal;
+            y = variableJoystick.Vertical;
+        }
+        else if (Application.platform == RuntimePlatform.WindowsEditor || Application.platform == RuntimePlatform.WindowsPlayer)
+        {
+            x = Input.GetAxis("Horizontal");
+            y = Input.GetAxis("Vertical");
+        }
+
+        if (x > 0)
+        {
+            //x = 1;
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+
+        else if (x < 0)
+        {
+            //x = -1;
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+
+        Mover(x);
+    }
+
+    private void Mover(float velocidadX)
+    {
         if (animator.GetBool("recibiendoDano") == false && rb != null)
         {
-            if (Mathf.Abs(x) > 0.1f)
+            if (Mathf.Abs(velocidadX) > 0.1f)
             {
                 animator.SetBool("corriendo", true);
-                rb.velocity = new Vector2(x * velocidad, rb.velocity.y);
+                rb.velocity = new Vector2(velocidadX * velocidad, rb.velocity.y);
             }
             else
             {
@@ -170,7 +186,7 @@ public class Player : MonoBehaviour
         estadoPlayer = EstadoPlayer.normal;
     }
 
-    private void Disparar()
+    public void Disparar()
     {
         if (tieneCadencia == false)
         {
@@ -205,7 +221,7 @@ public class Player : MonoBehaviour
         animator.SetBool("disparando", false);
     }
 
-    private void Saltar()
+    public void Saltar()
     {
         if ((ObtenerEnSuelo() || ObtenerEnAgua()) && rb != null)
         {

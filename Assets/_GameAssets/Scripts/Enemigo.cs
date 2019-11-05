@@ -37,6 +37,10 @@ public class Enemigo : MonoBehaviour
             }
             else
             {
+                if (GetComponent<Atacador2>() != null)
+                {
+                    GetComponent<Animator>().SetBool("recibiendoDano", true);
+                }
                 recibiendoDano = true;
                 InvokeRepeating("Parpadeo", 0, 0.2f);
             }
@@ -52,6 +56,11 @@ public class Enemigo : MonoBehaviour
         }
         else
         {
+            if (GetComponent<Atacador2>() != null)
+            {
+                GetComponent<Animator>().SetBool("recibiendoDano", false);
+            }
+
             GetComponent<SpriteRenderer>().enabled = true;
             parpadeos = 0;
             recibiendoDano = false;

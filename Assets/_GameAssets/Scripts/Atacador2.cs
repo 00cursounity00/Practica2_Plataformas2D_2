@@ -5,6 +5,7 @@ using UnityEngine;
 public class Atacador2 : MonoBehaviour
 {
     [SerializeField] float dano;
+    [SerializeField] float tiempoEntreAtaques;
     //[SerializeField] Transform puntoDisparo;
     //[SerializeField] GameObject prefabSlash;
     private bool atacando = false;
@@ -29,7 +30,7 @@ public class Atacador2 : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(tiempoEntreAtaques);
             //Instantiate(prefabSlash, puntoDisparo.position, puntoDisparo.rotation);
             GetComponent<Animator>().SetTrigger("atacar");
             atacando = true;
