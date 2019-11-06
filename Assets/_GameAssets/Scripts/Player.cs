@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     [SerializeField] FixedJoystick variableJoystick;
     private AudioSource[] audios;
     private AudioSource audioMusic;
-    private float x, y;
+    private float x, y, xAxis, yAxis, xJoystick, yJoystick;
     private Rigidbody2D rb;
     private GameManager gm;
     private Animator animator;
@@ -64,26 +64,39 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Application.platform == RuntimePlatform.Android)
+        xAxis = variableJoystick.Horizontal;
+        yAxis = variableJoystick.Vertical;
+        
+        xJoystick = Input.GetAxis("Horizontal");
+        yJoystick = Input.GetAxis("Vertical");
+
+        if (Mathf.Abs(xAxis) > Mathf.Abs(xJoystick))
         {
-            x = variableJoystick.Horizontal;
-            y = variableJoystick.Vertical;
+            x = xAxis;
         }
-        else if (Application.platform == RuntimePlatform.WindowsEditor || Application.platform == RuntimePlatform.WindowsPlayer)
+        else
         {
-            x = Input.GetAxis("Horizontal");
-            y = Input.GetAxis("Vertical");
+            x = xJoystick;
         }
 
-        if (x > 0)
+        if (Mathf.Abs(yAxis) > Mathf.Abs(yJoystick))
         {
-            //x = 1;
+            y = yAxis;
+        }
+        else
+        {
+            y = yJoystick;
+        }
+
+        if (x > 0.1f)
+        {
+            x = 1;
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
-        else if (x < 0)
+        else if (x < -0.1f)
         {
-            //x = -1;
+            x = -1;
             transform.rotation = Quaternion.Euler(0, 180, 0);
         }
 
@@ -92,7 +105,7 @@ public class Player : MonoBehaviour
 
     private void Mover(float velocidadX)
     {
-        if (animator.GetBool("recibiendoDano") == false && rb != null)
+        if (animator.GetBool("recibiendoDano") == false && rb != null && !animator.GetBool("recibiendoDano"))
         {
             if (Mathf.Abs(velocidadX) > 0.1f)
             {
@@ -102,6 +115,7 @@ public class Player : MonoBehaviour
             else
             {
                 animator.SetBool("corriendo", false);
+                rb.velocity = new Vector2(0, rb.velocity.y);
                 //rb.velocity = new Vector2(0, 0);
             }
         }
@@ -153,6 +167,8 @@ public class Player : MonoBehaviour
                 Invoke("QuitarRecibirDano", 0.5f);
             }
             estadoPlayer = EstadoPlayer.recibiendoDano;
+            tieneCadencia = false;
+            animator.SetBool("disparando", false);
         }
     }
 
@@ -170,7 +186,6 @@ public class Player : MonoBehaviour
             cc.enabled = false;
         }
 
-        GetComponent<BoxCollider2D>().enabled = false;
         Invoke("ReiniciarJuego", 2);
     }
 
@@ -188,8 +203,10 @@ public class Player : MonoBehaviour
 
     public void Disparar()
     {
-        if (tieneCadencia == false)
+        if (tieneCadencia == false && !animator.GetBool("recibiendoDano"))
         {
+            tieneCadencia = true;
+            Invoke("QuitarCadencia", cadenciaDisparo);
             animator.SetBool("disparando", true);
             Invoke("QuitarDisparar", 0.1f);
 
@@ -205,9 +222,6 @@ public class Player : MonoBehaviour
                 GameObject proyectil = Instantiate(prefabProyectil, puntoDisparoAire.position, puntoDisparoAire.rotation);
                 proyectil.GetComponent<Rigidbody2D>().AddForce(puntoDisparoAire.right * fuerzaDisparo);
             }
-
-            tieneCadencia = true;
-            Invoke("QuitarCadencia", cadenciaDisparo);
         }
     }
 
@@ -223,7 +237,7 @@ public class Player : MonoBehaviour
 
     public void Saltar()
     {
-        if ((ObtenerEnSuelo() || ObtenerEnAgua()) && rb != null)
+        if ((ObtenerEnSuelo() || ObtenerEnAgua()) && rb != null && !animator.GetBool("recibiendoDano"))
         {
             rb.velocity = new Vector2(rb.velocity.x, fuerzaSalto);
             animator.SetTrigger("saltar");
@@ -244,27 +258,27 @@ public class Player : MonoBehaviour
 
     private bool ObtenerEnSuelo()
     {
-        Collider2D cd = Physics2D.OverlapBox(detectorSuelo.position, new Vector2(0.8f,0.1f), 0, layerSuelo);
+        Collider2D cd = Physics2D.OverlapBox(detectorSuelo.position, new Vector2(0.8f,0.15f), 0, layerSuelo);
 
         if (cd != null)
         {
-            foreach (CapsuleCollider2D cc in GetComponents<CapsuleCollider2D>())
+            /*foreach (CapsuleCollider2D cc in GetComponents<CapsuleCollider2D>())
             {
                 cc.sharedMaterial = null;
-            }
-            GetComponent<BoxCollider2D>().sharedMaterial = null;
-            //GetComponent<PolygonCollider2D>().sharedMaterial = null;
+            }*/
+            //GetComponent<BoxCollider2D>().enabled = false;
+            GetComponent<CapsuleCollider2D>().sharedMaterial = null;
             animator.SetBool("enSuelo", true);
             return true;
         }
 
-        foreach (CapsuleCollider2D cc in GetComponents<CapsuleCollider2D>())
+        /*foreach (CapsuleCollider2D cc in GetComponents<CapsuleCollider2D>())
         {
             cc.sharedMaterial = pm2d;
-        }
+        }*/
 
-        GetComponent<BoxCollider2D>().sharedMaterial = pm2d;
-        //GetComponent<PolygonCollider2D>().sharedMaterial = pm2d;
+        //GetComponent<BoxCollider2D>().enabled = true;
+        GetComponent<CapsuleCollider2D>().sharedMaterial = pm2d;
         animator.SetBool("enSuelo", false);
         return false;
     }

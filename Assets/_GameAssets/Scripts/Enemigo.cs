@@ -49,7 +49,7 @@ public class Enemigo : MonoBehaviour
 
     private void Parpadeo()
     {
-        if (parpadeos < 5)
+        if (parpadeos < 4)
         {
             GetComponent<SpriteRenderer>().enabled = !GetComponent<SpriteRenderer>().enabled;
             parpadeos++;
