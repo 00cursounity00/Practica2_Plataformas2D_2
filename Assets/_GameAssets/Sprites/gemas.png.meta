@@ -1,0 +1,1855 @@
+fileFormatVersion: 2
+guid: 5f09b2b0dff3316419afe55c5ad87693
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6563245220893876342
+    second: gemas_0
+  - first:
+      213: 3751804756761988290
+    second: gemas_1
+  - first:
+      213: 1500706542880543818
+    second: gemas_2
+  - first:
+      213: 232324121939207809
+    second: gemas_3
+  - first:
+      213: -7189833861327119051
+    second: gemas_4
+  - first:
+      213: 3415836423344788524
+    second: gemas_5
+  - first:
+      213: 6714081639155859891
+    second: gemas_6
+  - first:
+      213: -5389979586185128345
+    second: gemas_7
+  - first:
+      213: 2737133770329940930
+    second: gemas_8
+  - first:
+      213: 959825754418299118
+    second: gemas_9
+  - first:
+      213: -181499213684340265
+    second: gemas_10
+  - first:
+      213: 4333217829260244875
+    second: gemas_11
+  - first:
+      213: 8454346884990550706
+    second: gemas_12
+  - first:
+      213: -8818629460334782600
+    second: gemas_13
+  - first:
+      213: -1286823994098029776
+    second: gemas_14
+  - first:
+      213: -5523166463084638799
+    second: gemas_15
+  - first:
+      213: -8960249593928218052
+    second: gemas_16
+  - first:
+      213: 7825657382732432790
+    second: gemas_17
+  - first:
+      213: -1915145106789038720
+    second: gemas_18
+  - first:
+      213: 603833854927156336
+    second: gemas_19
+  - first:
+      213: 7660599306515910351
+    second: gemas_20
+  - first:
+      213: -5312234001131154483
+    second: gemas_21
+  - first:
+      213: 6832836376824078929
+    second: gemas_22
+  - first:
+      213: 7975109668104425391
+    second: gemas_23
+  - first:
+      213: 4049434445903904098
+    second: gemas_24
+  - first:
+      213: 4544052278073873268
+    second: gemas_25
+  - first:
+      213: -5476947036819903946
+    second: gemas_26
+  - first:
+      213: 6795288688346775024
+    second: gemas_27
+  - first:
+      213: -8060148815596190513
+    second: gemas_28
+  - first:
+      213: 8478801477149203907
+    second: gemas_29
+  - first:
+      213: -7636918346514834521
+    second: gemas_30
+  - first:
+      213: 7582601351806582251
+    second: gemas_31
+  - first:
+      213: -5878860357956778675
+    second: gemas_32
+  - first:
+      213: 132610530916777045
+    second: gemas_33
+  - first:
+      213: 8477716983679203686
+    second: gemas_34
+  - first:
+      213: -353335889825645482
+    second: gemas_35
+  - first:
+      213: -7880884502065560986
+    second: gemas_36
+  - first:
+      213: 5490540296900622990
+    second: gemas_37
+  - first:
+      213: -675228227276843945
+    second: gemas_38
+  - first:
+      213: -6355161638920991863
+    second: gemas_39
+  - first:
+      213: -4244564692838059898
+    second: gemas_40
+  - first:
+      213: -4004058246092960417
+    second: gemas_41
+  - first:
+      213: 3313218487239760902
+    second: gemas_42
+  - first:
+      213: 2019531493977072404
+    second: gemas_43
+  - first:
+      213: 2610815018150185632
+    second: gemas_44
+  - first:
+      213: -6688819978182201288
+    second: gemas_45
+  - first:
+      213: 5362335729202545333
+    second: gemas_46
+  - first:
+      213: 4599310031521134326
+    second: gemas_47
+  - first:
+      213: 488565443457014809
+    second: gemas_48
+  - first:
+      213: 2802427736994522948
+    second: gemas_49
+  - first:
+      213: 8161839603732318488
+    second: gemas_50
+  - first:
+      213: -5821481812146390369
+    second: gemas_51
+  - first:
+      213: 1821569831466051208
+    second: gemas_52
+  - first:
+      213: -1309863738712207908
+    second: gemas_53
+  - first:
+      213: -7282559727537125086
+    second: gemas_54
+  - first:
+      213: 7638834069286381279
+    second: gemas_55
+  - first:
+      213: 7455540038860814377
+    second: gemas_56
+  - first:
+      213: 1011945153995083697
+    second: gemas_57
+  - first:
+      213: -2535147106117941971
+    second: gemas_58
+  - first:
+      213: -376944523269332068
+    second: gemas_59
+  - first:
+      213: 1668599448335834953
+    second: gemas_60
+  - first:
+      213: 3316634734578188220
+    second: gemas_61
+  - first:
+      213: 5464270346239900825
+    second: gemas_62
+  - first:
+      213: -6918246552238481273
+    second: gemas_63
+  - first:
+      213: -3818774042747160135
+    second: gemas_64
+  - first:
+      213: -8198290244626995764
+    second: gemas_65
+  - first:
+      213: 1378896176342293476
+    second: gemas_66
+  - first:
+      213: 159745275266886885
+    second: gemas_67
+  - first:
+      213: 2685227203275705515
+    second: gemas_68
+  - first:
+      213: -2945930949214446541
+    second: gemas_69
+  - first:
+      213: -1521722040608198301
+    second: gemas_70
+  - first:
+      213: -8895462139486340750
+    second: gemas_71
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gemas_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 253
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c982307cc4957444ba5348ece281521b
+      internalID: 6563245220893876342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 253
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d8378b0f2359b048815b78f212e47fa
+      internalID: 3751804756761988290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_2
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 253
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3b47a841bb09044bad330644f98c34
+      internalID: 1500706542880543818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_3
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 253
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009ea16e58c36a447ae8b7c84da6cc62
+      internalID: 232324121939207809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_4
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 253
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c00b08499e37d29469674ea6c344f6b5
+      internalID: -7189833861327119051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_5
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 253
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bbdaa24b11740646a79cd9ef4c7ebb1
+      internalID: 3415836423344788524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_6
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 253
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5874bee2150371d44bd0414eb7985f32
+      internalID: 6714081639155859891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_7
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 253
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7227edde34834a4483afff81bb7d2d2
+      internalID: -5389979586185128345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 224
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b971ef706611bc74abc0aeee147220af
+      internalID: 2737133770329940930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_9
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 224
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789e601c24aa9c141a0edd7b5b31c8f9
+      internalID: 959825754418299118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_10
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 225
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681b95b996f1d0240833a2ba3fbee13a
+      internalID: -181499213684340265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_11
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 225
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef999745e1d41a04eb062b7fed8727eb
+      internalID: 4333217829260244875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_12
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 225
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1388e594e3a0f044994c8436da4c2e0a
+      internalID: 8454346884990550706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 225
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf42da69fa98c54ca090f96040155ba
+      internalID: -8818629460334782600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_14
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 225
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21f1c6ccc2b8234ba6635854238a1f0
+      internalID: -1286823994098029776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_15
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 224
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626ee21c317672e4cad28fd10643151e
+      internalID: -5523166463084638799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_16
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 196
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89dbeed08be7e56459b3f255381b3b3d
+      internalID: -8960249593928218052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_17
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 196
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560f36ed02149414d886c3d363fef3fc
+      internalID: 7825657382732432790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_18
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 196
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f97fe01992f00340a968f07ea9c09bc
+      internalID: -1915145106789038720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_19
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 196
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dab82dd074c0874382761307b332612
+      internalID: 603833854927156336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_20
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 196
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c89f3fedf6ba342afb15ff81e99c39
+      internalID: 7660599306515910351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_21
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 196
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a1cbadf8a3046499b8698020ae8681
+      internalID: -5312234001131154483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_22
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 196
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2261c8d75ea003439055d19fffe6b8f
+      internalID: 6832836376824078929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_23
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 196
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f4334578943254d841cb997d87c602
+      internalID: 7975109668104425391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_24
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 167
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1dee5b32c69f444bdf912257de6126
+      internalID: 4049434445903904098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_25
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 167
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d86b67bdb279ced40a8b692f734b8fe0
+      internalID: 4544052278073873268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_26
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 168
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac2f32430b72a64eba4074bdcc2f9cc
+      internalID: -5476947036819903946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_27
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 168
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fdc1778f2004684b9d3c53800f2c799
+      internalID: 6795288688346775024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_28
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 168
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9c4250d5bd2ba4a94903f8dddbe7df
+      internalID: -8060148815596190513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_29
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 168
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9669c12321ab607418f9c68374a87b31
+      internalID: 8478801477149203907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_30
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 168
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713fb031942104e4c8e7a0347aab29e8
+      internalID: -7636918346514834521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_31
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 167
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa779c9f6b23f1c4da2fba6d96010bda
+      internalID: 7582601351806582251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_32
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 139
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceec461b34768a54f9833ccb4efb13bd
+      internalID: -5878860357956778675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_33
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 139
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f2b0cd2b35feb44804799c2ae3d03c
+      internalID: 132610530916777045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_34
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 139
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a7959f8a86f2441a6f26f19090f6a0
+      internalID: 8477716983679203686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_35
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 139
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb9fb9569bafee41ad6408388391899
+      internalID: -353335889825645482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_36
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 139
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c986a13a9af76459836ab177728490
+      internalID: -7880884502065560986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_37
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 139
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7a7e6d5f462fc49919eeb8d3c282ce
+      internalID: 5490540296900622990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_38
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 139
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c4c6b47a920f04dad88c4f311d0cc7
+      internalID: -675228227276843945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_39
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 139
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b281f1f62d1d034fb24be25b6f29a68
+      internalID: -6355161638920991863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_40
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 110
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83395c426a722c429cd028fd185dff0
+      internalID: -4244564692838059898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_41
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 110
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc303592d2fd6df4ba33b5cc49661eb0
+      internalID: -4004058246092960417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_42
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 111
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba7c77aa2e8c5f4b93c51d14281a07d
+      internalID: 3313218487239760902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_43
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 111
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5724917302f10f24fb10d7c968ad1f02
+      internalID: 2019531493977072404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_44
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 111
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08bd1ac643371094b82d98278e21568c
+      internalID: 2610815018150185632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_45
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 111
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 317ec3b49ed16444bb536f82c14c0ab6
+      internalID: -6688819978182201288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_46
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 111
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0cffe80b554644cb47de1f37158d50
+      internalID: 5362335729202545333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_47
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 110
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59c90d3218f441f4482dbdacbdb20c6f
+      internalID: 4599310031521134326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_48
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 82
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e711194c3d9867048a894df0d1bdac1f
+      internalID: 488565443457014809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_49
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 82
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1128629421979ab4fb6aa18746798f50
+      internalID: 2802427736994522948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_50
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 82
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db32d638d810fe544900e593a60eba39
+      internalID: 8161839603732318488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_51
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 82
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd2d12e39f233bc4cb1a3104b28b386c
+      internalID: -5821481812146390369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_52
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 82
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1589dcd201235e418f69f7fbf33e7b0
+      internalID: 1821569831466051208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_53
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 82
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66ae86bc098d48f439ea8f7fd5bb606c
+      internalID: -1309863738712207908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_54
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 82
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7632acb6a80171d4eaf655cf0a6a129b
+      internalID: -7282559727537125086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_55
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 82
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f9a6e8bd08d1484ab75ca96e13e7583
+      internalID: 7638834069286381279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_56
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 53
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84010b658e1d6024cb4c6fdfd7116a14
+      internalID: 7455540038860814377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_57
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 53
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3754a825485e93042b851895541a6d67
+      internalID: 1011945153995083697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_58
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 54
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56659da08910b7b4bb660c3edf858ba5
+      internalID: -2535147106117941971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_59
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 54
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2472b87fc33074428d3fed8f7642062
+      internalID: -376944523269332068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_60
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 54
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d52a9f0e16adeb4c92384a3a047be2b
+      internalID: 1668599448335834953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_61
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 54
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab269bccd331a24488c7edb689cc2bb1
+      internalID: 3316634734578188220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_62
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 54
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e1307d4dbfb66f45a34266d74003e04
+      internalID: 5464270346239900825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_63
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 53
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d5a1538261fe94f81a1f1b5ce6070c
+      internalID: -6918246552238481273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_64
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 5
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6398dde7a133a4ebf3b6b0cfd7d3d3
+      internalID: -3818774042747160135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_65
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 5
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a70de1a49fa63d48b50bafa79c9a60b
+      internalID: -8198290244626995764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_66
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 5
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1f563fdbe71ee4a9ef0b717052f9eb
+      internalID: 1378896176342293476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_67
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 5
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2070552367b92da4a87386ec847a1385
+      internalID: 159745275266886885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_68
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 5
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2201a49d6471be4181a65f291779368
+      internalID: 2685227203275705515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_69
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 5
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d7c5489ae532d48b061c833471a395
+      internalID: -2945930949214446541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_70
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 5
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2187343d1e499284290229320520c88a
+      internalID: -1521722040608198301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemas_71
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 5
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b2ecadae21cc14b9369f3513538acb
+      internalID: -8895462139486340750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

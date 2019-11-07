@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tipo: 1
-  cantidad: 0.5
+  cantidad: 1
 --- !u!50 &9211074200035885223
 Rigidbody2D:
   serializedVersion: 4
