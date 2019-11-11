@@ -23,12 +23,12 @@ public class Enemigo : MonoBehaviour
         if (!recibiendoDano)
         {
             vida -= dano;
-            barraVida.value = (vida / vidaMax);
+            //barraVida.value = (vida / vidaMax);
 
-            if (vida / vidaMax <= 0.5f)
+            /*if (vida / vidaMax <= 0.5f)
             {
                 fillVida.color = new Color(1, 0, 0);
-            }
+            }*/
 
             if (vida <= 0)
             {

@@ -26,12 +26,14 @@ public class Player : MonoBehaviour
     private const int AUDIO_SHURIKEN = 0;
     private const int AUDIO_JUMP = 1;
     private bool enSuelo = false;
-    public enum EstadoPlayer {normal, recibiendoDano};
-    private EstadoPlayer estadoPlayer = EstadoPlayer.normal;
+    public enum EstadoPlayer {normal, recibiendoDano, teletransportandose};
+    public EstadoPlayer estadoPlayer = EstadoPlayer.normal;
     private Vector2 posicionInicial;
     private int parpadeos = 0;
-    private bool tieneCadencia = false;
+    public bool tieneCadencia = false;
     private UIManager ui;
+    private float gravedad;
+    private Transform destinoTeletransporte;
 
     void Start()
     {
@@ -105,7 +107,7 @@ public class Player : MonoBehaviour
 
     private void Mover(float velocidadX)
     {
-        if (animator.GetBool("recibiendoDano") == false && rb != null && !animator.GetBool("recibiendoDano"))
+        if (estadoPlayer != EstadoPlayer.teletransportandose && rb != null && !animator.GetBool("recibiendoDano"))
         {
             if (Mathf.Abs(velocidadX) > 0.1f)
             {
@@ -142,6 +144,8 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("Plataforma"))
         {
             transform.SetParent(collision.gameObject.transform);
+            //gravedad = rb.gravityScale;
+            //rb.gravityScale = 50;
         }
     }
 
@@ -149,6 +153,7 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Plataforma"))
         {
+            //rb.gravityScale = gravedad;
             transform.SetParent(null);
         }
     }
@@ -159,12 +164,12 @@ public class Player : MonoBehaviour
         {
             if (gm.QuitarVida(dano))
             {
-                PerderVida();
+                PerderVida(true);
             }
             else
             {
                 animator.SetBool("recibiendoDano", true);
-                Invoke("QuitarRecibirDano", 0.5f);
+                //Invoke("QuitarRecibirDano", 0.5f);
             }
             estadoPlayer = EstadoPlayer.recibiendoDano;
             tieneCadencia = false;
@@ -172,13 +177,17 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void PerderVida()
+    public void PerderVida(bool conExplosion)
     {
         GetComponent<SpriteRenderer>().enabled = false;
-        explosionPlayer.SetActive(true);
+        if (conExplosion)
+        {
+            explosionPlayer.SetActive(true);
+        }
         //rb.isKinematic = true;
         //rb.velocity = Vector2.zero;
         Destroy(rb);
+        gm.RestarVida();
         ui.FundirNegro(1, 2);
 
         foreach (CapsuleCollider2D cc in GetComponents<CapsuleCollider2D>())
@@ -186,12 +195,45 @@ public class Player : MonoBehaviour
             cc.enabled = false;
         }
 
+        CancelInvoke();
         Invoke("ReiniciarJuego", 2);
+    }
+
+    public void Teletransportar ()
+    {
+        rb.isKinematic = true;
+        rb.velocity = Vector2.zero;
+        foreach (CapsuleCollider2D cc in GetComponents<CapsuleCollider2D>())
+        {
+            cc.enabled = false;
+        }
+
+        estadoPlayer = EstadoPlayer.teletransportandose;
+        animator.SetBool("corriendo", false);
+        ui.FundirNegro(1, 1.5f);
+        CancelInvoke();
+        GetComponent<SpriteRenderer>().enabled = true;
+        Invoke("TerminarTeletransportar", 1.5f);
+    }
+
+    public void TerminarTeletransportar()
+    {
+        GetComponent<SpriteRenderer>().enabled = true;
+        rb.isKinematic = false;
+
+        foreach (CapsuleCollider2D cc in GetComponents<CapsuleCollider2D>())
+        {
+            cc.enabled = true;
+        }
+
+        estadoPlayer = EstadoPlayer.normal;
+        transform.position = GameObject.Find("DestinoTeletransporte").transform.position;
+        ui.FundirNegro(0, 1.5f);
     }
 
     private void QuitarRecibirDano()
     {
-        Invoke("QuitarEstadoRecibiendoDano", 1.6f);
+        //Invoke("QuitarEstadoRecibiendoDano", 1.6f);
         InvokeRepeating("Parpadeo", 0, 0.2f);
         animator.SetBool("recibiendoDano", false);
     }
@@ -230,6 +272,11 @@ public class Player : MonoBehaviour
         tieneCadencia = false;
     }
 
+    private void QuitarCadencia2()
+    {
+        Invoke("QuitarCadencia", cadenciaDisparo);
+    }
+
     private void QuitarDisparar()
     {
         animator.SetBool("disparando", false);
@@ -240,7 +287,7 @@ public class Player : MonoBehaviour
         if ((ObtenerEnSuelo() || ObtenerEnAgua()) && rb != null && !animator.GetBool("recibiendoDano"))
         {
             rb.velocity = new Vector2(rb.velocity.x, fuerzaSalto);
-            animator.SetTrigger("saltar");
+            animator.SetBool("saltando", true);
             //Invoke("QuitarSaltar", 0.1f);
             //rb.AddForce(new Vector2(0, 1) * fuerzaSalto);
         }
@@ -248,7 +295,7 @@ public class Player : MonoBehaviour
 
     private void QuitarSaltar()
     {
-        animator.ResetTrigger("saltar");
+        animator.SetBool("saltando", false);
     }
 
     private bool ObtenerEnAgua()
@@ -258,7 +305,7 @@ public class Player : MonoBehaviour
 
     private bool ObtenerEnSuelo()
     {
-        Collider2D cd = Physics2D.OverlapBox(detectorSuelo.position, new Vector2(0.8f,0.15f), 0, layerSuelo);
+        Collider2D cd = Physics2D.OverlapBox(detectorSuelo.position, new Vector2(0.8f,0.2f), 0, layerSuelo);
 
         if (cd != null)
         {
@@ -306,7 +353,8 @@ public class Player : MonoBehaviour
         else
         {
             parpadeos = 0;
-            CancelInvoke();
+            estadoPlayer = EstadoPlayer.normal;
+            CancelInvoke("Parpadeo");
         }
     }
 

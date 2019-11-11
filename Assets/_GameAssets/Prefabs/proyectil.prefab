@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dano: 25
-  tiempoDestruccion: 2
+  tiempoDestruccion: 0.61
 --- !u!50 &1021568530828037915
 Rigidbody2D:
   serializedVersion: 4

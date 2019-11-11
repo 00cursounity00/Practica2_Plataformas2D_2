@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void RestarVida()
+    public void RestarVida()
     {
         numeroVidas--;
 
@@ -184,9 +184,17 @@ public class GameManager : MonoBehaviour
             tiempo--;
             if (tiempo == 0)
             {
-                RestarVida();
-                GameObject.Find("Yago").GetComponent<Player>().PerderVida();
+                GameObject.Find("Yago").GetComponent<Player>().PerderVida(true);
             }
+        }
+    }
+       
+    public void SumarVida()
+    {
+        if (numeroVidas < numeroVidasMax)
+        {
+            numeroVidas++;
+            ui.ActualizarVidas(numeroVidas);
         }
     }
 }

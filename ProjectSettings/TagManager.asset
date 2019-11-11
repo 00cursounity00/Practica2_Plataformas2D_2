@@ -11,6 +11,7 @@ TagManager:
   - Proyectil
   - Item
   - PlataformaMovil
+  - CamaraVirtual
   layers:
   - Default
   - TransparentFX

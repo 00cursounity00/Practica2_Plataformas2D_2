@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 979363171035687019}
   m_Layer: 8
   m_Name: PlatMov
-  m_TagString: Untagged
+  m_TagString: Plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   origen: {fileID: 5908691888553037188}
   destino: {fileID: 2511196831869701901}
-  velocidad: 2
+  velocidad: 0.5
   direccion: 1
 --- !u!1 &3805771257306626247
 GameObject:
@@ -297,7 +297,7 @@ GameObject:
   - component: {fileID: 670018561912288204}
   m_Layer: 8
   m_Name: PlataformaMovil3
-  m_TagString: Suelo
+  m_TagString: Plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
