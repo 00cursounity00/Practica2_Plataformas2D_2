@@ -21,16 +21,18 @@ public class GameManager : MonoBehaviour
     [SerializeField] int puntuacionMax;
     [SerializeField] int tiempo;
     [SerializeField] int tiempoMax;
+    [SerializeField] AudioClip[] audioClips;
     private UIManager ui;
-    private const string PARAM_X = "x";
-    private const string PARAM_Y = "y";
-    private const string VIDAS = "VIDAS";
-    private const string MEJOR_PUNTUACION_1_1 = "MEJOR_PUNTUACION_1_1";
     private bool checkpointActivo = false;
+    private Player player;
+    private AudioSource audioMusic;
 
+    
     private void Start()
     {
         ui = GameObject.Find("UIManager").GetComponent<UIManager>();
+        audioMusic = GetComponent<AudioSource>();
+        player = GameObject.Find("Yago").GetComponent<Player>();
     }
 
     private void Update()
@@ -57,7 +59,6 @@ public class GameManager : MonoBehaviour
         if (vida <= 0)
         {
             ui.ActualizarVida(0);
-            RestarVida();
             return true;
         }
         else
@@ -67,19 +68,26 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void RestarVida()
+    public bool RestarVida()
     {
+        bool sinVidas = false;
+
         numeroVidas--;
 
         if (numeroVidas < 0)
         {
             numeroVidas = numeroVidasMax;
-            PlayerPrefs.DeleteKey(PARAM_X);
-            PlayerPrefs.DeleteKey(PARAM_Y);
+            checkpointActivo = false;
+            sinVidas = true;
+            PlayerPrefs.DeleteKey(UIConfigManager.PARAM_X);
+            PlayerPrefs.DeleteKey(UIConfigManager.PARAM_Y);
+            PlayerPrefs.DeleteKey(UIConfigManager.CHECKPOINT_ACTIVO);
         }
 
-        PlayerPrefs.SetInt(VIDAS, numeroVidas);
+        PlayerPrefs.SetInt(UIConfigManager.VIDAS, numeroVidas);
         PlayerPrefs.Save();
+
+        return sinVidas;
     }
 
     public void SumarPuntos(int puntos)
@@ -90,20 +98,41 @@ public class GameManager : MonoBehaviour
 
     public bool HayAlmacenadaPosicionPlayer()
     {
-        return PlayerPrefs.HasKey(PARAM_X);
+        return PlayerPrefs.HasKey(UIConfigManager.PARAM_X);
+    }
+
+    public bool ObtenerCheckpoint()
+    {
+        //checkpointActivo = PlayerPrefs.GetInt(CHECKPOINT_ACTIVO, 0) == 1 ? true : false;
+
+        return checkpointActivo;
+    }
+
+    public void ActivarCheckpoint()
+    {
+        checkpointActivo = true;
+        PlayerPrefs.SetInt(UIConfigManager.CHECKPOINT_ACTIVO, 1);
+        PlayerPrefs.Save();
+    }
+
+    public void DesctivarCheckpoint()
+    {
+        checkpointActivo = false;
+        PlayerPrefs.SetInt(UIConfigManager.CHECKPOINT_ACTIVO, 0);
+        PlayerPrefs.Save();
     }
 
     public void GuardarPosicion(Vector2 position)
     {
-        PlayerPrefs.SetFloat(PARAM_X, position.x);
-        PlayerPrefs.SetFloat(PARAM_Y, position.y);
+        PlayerPrefs.SetFloat(UIConfigManager.PARAM_X, position.x);
+        PlayerPrefs.SetFloat(UIConfigManager.PARAM_Y, position.y);
         PlayerPrefs.Save();
     }
 
     public Vector2 ObtenerPosicion(Vector2 posicionInicial)
     {
-        float x = PlayerPrefs.GetFloat(PARAM_X, posicionInicial.x);
-        float y = PlayerPrefs.GetFloat(PARAM_Y, posicionInicial.y);
+        float x = PlayerPrefs.GetFloat(UIConfigManager.PARAM_X, posicionInicial.x);
+        float y = PlayerPrefs.GetFloat(UIConfigManager.PARAM_Y, posicionInicial.y);
         return new Vector2(x, y);
     }
 
@@ -113,17 +142,63 @@ public class GameManager : MonoBehaviour
         vidaCorazon = vidaCorazonMax;*/
         vida = vidaMax;
         poder = 0;
-        numeroVidas = PlayerPrefs.GetInt(VIDAS, numeroVidasMax);
+        numeroVidas = PlayerPrefs.GetInt(UIConfigManager.VIDAS, numeroVidasMax);
         puntuacion = 0;
-        puntuacionMax = PlayerPrefs.GetInt(MEJOR_PUNTUACION_1_1, 0);
-        tiempo = tiempoMax;        
-        ui.ActualizarVida(vida/vidaMax);
-        ui.ActualizarPoder(poder/poderMax);
+        puntuacionMax = PlayerPrefs.GetInt(UIConfigManager.MEJOR_PUNTUACION_1_1, 0);
+        tiempo = tiempoMax;
+        audioMusic.volume = PlayerPrefs.GetFloat(UIConfigManager.VOLUMEN, 1);
+
+        ui.ActualizarVida(vida / vidaMax);
+        ui.ActualizarPoder(poder / poderMax);
         ui.ActualizarVidas(numeroVidas);
         ui.ActualizarTiempo(FormatearTiempo(tiempo));
         ui.ActualizarPuntuacion(puntuacion);
         ui.ActualizarPuntuacionMax(puntuacionMax);
-        ui.FundirNegro(0, 2);
+        
+        if (PlayerPrefs.GetInt(UIConfigManager.NIVEL_EMPEZADO, 0) == 0 && PlayerPrefs.GetInt(UIConfigManager.NIVEL_ACTUAL, 1) == 1)
+        {
+            Invoke("EmpezarCapituloYNivel", 1);
+            Invoke("EmpezrCuentaAtras", 8);
+            player.estadoPlayer = Player.EstadoPlayer.empezandoAJugar;
+        }
+        else if (PlayerPrefs.GetInt(UIConfigManager.NIVEL_EMPEZADO, 0) == 0)
+        {
+            Invoke("EmpezrNivel", 1);
+            Invoke("EmpezrCuentaAtras", 3);
+            player.estadoPlayer = Player.EstadoPlayer.empezandoAJugar;
+        }
+        else
+        {
+            EmpezrCuentaAtras();
+            ui.FundirNegro(0, 1);
+        }
+    }
+
+    private void EmpezrNivel()
+    {
+        string stage = "Stage " + PlayerPrefs.GetInt(UIConfigManager.NIVEL_ACTUAL, 1) + "-" + PlayerPrefs.GetInt(UIConfigManager.PANTALLA_ACTUAL, 1);
+        ui.MostrarNivel(stage, "Start");
+    }
+
+    private void EmpezarCapituloYNivel()
+    {
+        audioMusic.PlayOneShot(audioClips[0]);
+        string stage = "Stage " + PlayerPrefs.GetInt(UIConfigManager.NIVEL_ACTUAL, 1) + "-" + PlayerPrefs.GetInt(UIConfigManager.PANTALLA_ACTUAL, 1);
+        ui.MostrarCapituloYNivel("Chapter 1", "Escape from the Volcano", stage, "Start");
+    }
+
+    private void EmpezrCuentaAtras()
+    {
+        if (PlayerPrefs.GetInt(UIConfigManager.CONTROLES_TACTILES, 1) == 1)
+        {
+            ui.MostrarControlesTactiles();
+        }
+
+        audioMusic.clip = audioClips[1];
+        audioMusic.loop = true;
+        audioMusic.Play();
+        PlayerPrefs.SetInt(UIConfigManager.NIVEL_EMPEZADO, 1);
+        PlayerPrefs.Save();
         StartCoroutine("CuentaAtras");
     }
 
@@ -174,6 +249,11 @@ public class GameManager : MonoBehaviour
     public void ResetNivel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void SalirNivel()
+    {
+        SceneManager.LoadScene(0);
     }
 
     private IEnumerator CuentaAtras()

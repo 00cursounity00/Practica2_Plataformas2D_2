@@ -12,9 +12,8 @@ public class MusicManager : MonoBehaviour
     void Awake()
     {
         audioSource = GetComponent<AudioSource>();
-        audioSource.enabled = PlayerPrefs.GetInt("sound", 1) == 1 ? true : false;
-        audioSource.volume = PlayerPrefs.GetFloat("volume", 1);
-        DontDestroyOnLoad(this.gameObject);
+        audioSource.enabled = PlayerPrefs.GetInt(UIConfigManager.SONIDO, 1) == 1 ? true : false;
+        audioSource.volume = PlayerPrefs.GetFloat(UIConfigManager.VOLUMEN, 1);
     }
 
     public void CambiarVolumen()

@@ -17,16 +17,15 @@ public class Player : MonoBehaviour
     [SerializeField] LayerMask layerSuelo;
     [SerializeField] PhysicsMaterial2D pm2d;
     [SerializeField] FixedJoystick variableJoystick;
+
     private AudioSource[] audios;
     private AudioSource audioMusic;
     private float x, y, xAxis, yAxis, xJoystick, yJoystick;
     private Rigidbody2D rb;
     private GameManager gm;
     private Animator animator;
-    private const int AUDIO_SHURIKEN = 0;
-    private const int AUDIO_JUMP = 1;
     private bool enSuelo = false;
-    public enum EstadoPlayer {normal, recibiendoDano, teletransportandose};
+    public enum EstadoPlayer {normal, recibiendoDano, teletransportandose, empezandoAJugar};
     public EstadoPlayer estadoPlayer = EstadoPlayer.normal;
     private Vector2 posicionInicial;
     private int parpadeos = 0;
@@ -35,15 +34,22 @@ public class Player : MonoBehaviour
     private float gravedad;
     private Transform destinoTeletransporte;
 
+    private const int AUDIO_DISPARO = 0;
+    private const int AUDIO_SALTO = 1;
+    private const int AUDIO_EXPLOSION = 2;
+
+
+    //Metodos MonoBehaviour
+
     void Start()
     {
-        posicionInicial = transform.position;
+        posicionInicial = GameObject.Find("PosicionInicialPlayer").transform.position;
         rb = GetComponent<Rigidbody2D>();
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         animator = GetComponent<Animator>();
         audios = GetComponents<AudioSource>();
         ui = GameObject.Find("UIManager").GetComponent<UIManager>();
-        //audioMusic = GameObject.Find("MusicManager").GetComponent<AudioSource>();
+        audioMusic = GameObject.Find("GameManager").GetComponent<AudioSource>();
         IniciarJuego();
     }
 
@@ -54,13 +60,11 @@ public class Player : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             Disparar();
-            //audios[AUDIO_SHURIKEN].Play();
         }
 
         if (Input.GetButtonDown("Fire2"))
         {
             Saltar();
-            //audios[AUDIO_JUMP].Play();
         }
     }
 
@@ -105,40 +109,6 @@ public class Player : MonoBehaviour
         Mover(x);
     }
 
-    private void Mover(float velocidadX)
-    {
-        if (estadoPlayer != EstadoPlayer.teletransportandose && rb != null && !animator.GetBool("recibiendoDano"))
-        {
-            if (Mathf.Abs(velocidadX) > 0.1f)
-            {
-                animator.SetBool("corriendo", true);
-                rb.velocity = new Vector2(velocidadX * velocidad, rb.velocity.y);
-            }
-            else
-            {
-                animator.SetBool("corriendo", false);
-                rb.velocity = new Vector2(0, rb.velocity.y);
-                //rb.velocity = new Vector2(0, 0);
-            }
-        }
-    }
-
-    /*private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Suelo"))
-        {
-            enSuelo = true;
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Suelo"))
-        {
-            enSuelo = false;
-        }
-    }*/
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Plataforma"))
@@ -155,6 +125,116 @@ public class Player : MonoBehaviour
         {
             //rb.gravityScale = gravedad;
             transform.SetParent(null);
+        }
+    }
+
+
+    //Metodos Player
+
+    public void Disparar()
+    {
+        if (estadoPlayer != EstadoPlayer.teletransportandose && estadoPlayer != EstadoPlayer.empezandoAJugar && tieneCadencia == false && !animator.GetBool("recibiendoDano"))
+        {
+            audios[AUDIO_DISPARO].Play();
+            tieneCadencia = true;
+            Invoke("QuitarCadencia", cadenciaDisparo);
+            animator.SetBool("disparando", true);
+            Invoke("QuitarDisparar", 0.1f);
+
+            if (animator.GetBool("enSuelo"))
+            {
+                //print("suelo");
+                GameObject proyectil = Instantiate(prefabProyectil, puntoDisparoSuelo.position, puntoDisparoSuelo.rotation);
+                proyectil.GetComponent<Rigidbody2D>().AddForce(puntoDisparoSuelo.right * fuerzaDisparo);
+            }
+            else
+            {
+                //print("aire");
+                GameObject proyectil = Instantiate(prefabProyectil, puntoDisparoAire.position, puntoDisparoAire.rotation);
+                proyectil.GetComponent<Rigidbody2D>().AddForce(puntoDisparoAire.right * fuerzaDisparo);
+            }
+        }
+    }
+
+    private void QuitarCadencia()
+    {
+        tieneCadencia = false;
+    }
+
+    private void QuitarCadencia2()
+    {
+        Invoke("QuitarCadencia", cadenciaDisparo);
+    }
+
+    private void QuitarDisparar()
+    {
+        animator.SetBool("disparando", false);
+    }
+
+    public void Saltar()
+    {
+        if (estadoPlayer != EstadoPlayer.teletransportandose && estadoPlayer != EstadoPlayer.empezandoAJugar && rb != null && !animator.GetBool("recibiendoDano") && (ObtenerEnSuelo() || ObtenerEnAgua()))
+        {
+            audios[AUDIO_SALTO].Play();
+            rb.velocity = new Vector2(rb.velocity.x, fuerzaSalto);
+            animator.SetBool("saltando", true);
+            //Invoke("QuitarSaltar", 0.1f);
+            //rb.AddForce(new Vector2(0, 1) * fuerzaSalto);
+        }
+    }
+
+    private void QuitarSaltar()
+    {
+        animator.SetBool("saltando", false);
+    }
+
+    private bool ObtenerEnAgua()
+    {
+        return animator.GetBool("enAgua");
+    }
+
+    private bool ObtenerEnSuelo()
+    {
+        Collider2D cd = Physics2D.OverlapBox(detectorSuelo.position, new Vector2(0.8f, 0.2f), 0, layerSuelo);
+
+        if (cd != null)
+        {
+            /*foreach (CapsuleCollider2D cc in GetComponents<CapsuleCollider2D>())
+            {
+                cc.sharedMaterial = null;
+            }*/
+            //GetComponent<BoxCollider2D>().enabled = false;
+            GetComponent<CapsuleCollider2D>().sharedMaterial = null;
+            animator.SetBool("enSuelo", true);
+            return true;
+        }
+
+        /*foreach (CapsuleCollider2D cc in GetComponents<CapsuleCollider2D>())
+        {
+            cc.sharedMaterial = pm2d;
+        }*/
+
+        //GetComponent<BoxCollider2D>().enabled = true;
+        GetComponent<CapsuleCollider2D>().sharedMaterial = pm2d;
+        animator.SetBool("enSuelo", false);
+        return false;
+    }
+
+    private void Mover(float velocidadX)
+    {
+        if (estadoPlayer != EstadoPlayer.teletransportandose && estadoPlayer != EstadoPlayer.empezandoAJugar && rb != null && !animator.GetBool("recibiendoDano"))
+        {
+            if (Mathf.Abs(velocidadX) > 0.1f)
+            {
+                animator.SetBool("corriendo", true);
+                rb.velocity = new Vector2(velocidadX * velocidad, rb.velocity.y);
+            }
+            else
+            {
+                animator.SetBool("corriendo", false);
+                rb.velocity = new Vector2(0, rb.velocity.y);
+                //rb.velocity = new Vector2(0, 0);
+            }
         }
     }
 
@@ -179,24 +259,48 @@ public class Player : MonoBehaviour
 
     public void PerderVida(bool conExplosion)
     {
+        CancelInvoke("Parpadeo");
         GetComponent<SpriteRenderer>().enabled = false;
+
         if (conExplosion)
         {
+            audios[AUDIO_EXPLOSION].Play();
             explosionPlayer.SetActive(true);
         }
         //rb.isKinematic = true;
         //rb.velocity = Vector2.zero;
         Destroy(rb);
-        gm.RestarVida();
-        ui.FundirNegro(1, 2);
 
         foreach (CapsuleCollider2D cc in GetComponents<CapsuleCollider2D>())
         {
             cc.enabled = false;
         }
 
-        CancelInvoke();
-        Invoke("ReiniciarJuego", 2);
+        if (gm.RestarVida())
+        {
+            //Time.timeScale = 0;
+            Invoke("MostrarGameOver", 2);
+        }
+        else
+        {
+            Invoke("MostrarPantallaNegra", 2);
+        }
+    }
+
+    private void MostrarGameOver()
+    {
+        ui.MostrarGameOver();
+    }
+
+    private void MostrarPantallaNegra()
+    {
+        ui.FundirNegro(1, 1);
+        Invoke("ReiniciarJuego", 1);
+    }
+
+    private void ReiniciarJuego()
+    {
+        gm.ResetNivel();
     }
 
     public void Teletransportar ()
@@ -243,106 +347,6 @@ public class Player : MonoBehaviour
         estadoPlayer = EstadoPlayer.normal;
     }
 
-    public void Disparar()
-    {
-        if (tieneCadencia == false && !animator.GetBool("recibiendoDano"))
-        {
-            tieneCadencia = true;
-            Invoke("QuitarCadencia", cadenciaDisparo);
-            animator.SetBool("disparando", true);
-            Invoke("QuitarDisparar", 0.1f);
-
-            if (animator.GetBool("enSuelo"))
-            {
-                //print("suelo");
-                GameObject proyectil = Instantiate(prefabProyectil, puntoDisparoSuelo.position, puntoDisparoSuelo.rotation);
-                proyectil.GetComponent<Rigidbody2D>().AddForce(puntoDisparoSuelo.right * fuerzaDisparo);
-            }
-            else
-            {
-                //print("aire");
-                GameObject proyectil = Instantiate(prefabProyectil, puntoDisparoAire.position, puntoDisparoAire.rotation);
-                proyectil.GetComponent<Rigidbody2D>().AddForce(puntoDisparoAire.right * fuerzaDisparo);
-            }
-        }
-    }
-
-    private void QuitarCadencia()
-    {
-        tieneCadencia = false;
-    }
-
-    private void QuitarCadencia2()
-    {
-        Invoke("QuitarCadencia", cadenciaDisparo);
-    }
-
-    private void QuitarDisparar()
-    {
-        animator.SetBool("disparando", false);
-    }
-
-    public void Saltar()
-    {
-        if ((ObtenerEnSuelo() || ObtenerEnAgua()) && rb != null && !animator.GetBool("recibiendoDano"))
-        {
-            rb.velocity = new Vector2(rb.velocity.x, fuerzaSalto);
-            animator.SetBool("saltando", true);
-            //Invoke("QuitarSaltar", 0.1f);
-            //rb.AddForce(new Vector2(0, 1) * fuerzaSalto);
-        }
-    }
-
-    private void QuitarSaltar()
-    {
-        animator.SetBool("saltando", false);
-    }
-
-    private bool ObtenerEnAgua()
-    {
-        return animator.GetBool("enAgua");
-    }
-
-    private bool ObtenerEnSuelo()
-    {
-        Collider2D cd = Physics2D.OverlapBox(detectorSuelo.position, new Vector2(0.8f,0.2f), 0, layerSuelo);
-
-        if (cd != null)
-        {
-            /*foreach (CapsuleCollider2D cc in GetComponents<CapsuleCollider2D>())
-            {
-                cc.sharedMaterial = null;
-            }*/
-            //GetComponent<BoxCollider2D>().enabled = false;
-            GetComponent<CapsuleCollider2D>().sharedMaterial = null;
-            animator.SetBool("enSuelo", true);
-            return true;
-        }
-
-        /*foreach (CapsuleCollider2D cc in GetComponents<CapsuleCollider2D>())
-        {
-            cc.sharedMaterial = pm2d;
-        }*/
-
-        //GetComponent<BoxCollider2D>().enabled = true;
-        GetComponent<CapsuleCollider2D>().sharedMaterial = pm2d;
-        animator.SetBool("enSuelo", false);
-        return false;
-    }
-
-    private void IniciarJuego()
-    {
-        rb.velocity = Vector2.zero;
-        transform.position = gm.ObtenerPosicion(posicionInicial);
-        GameObject.Find("ParallaxBackground").transform.position = transform.position;
-        gm.IniciarParametros();
-    }
-
-    private void ReiniciarJuego()
-    {
-        gm.ResetNivel();
-    }
-    
     private void Parpadeo ()
     {
         if (parpadeos < 8)
@@ -356,6 +360,29 @@ public class Player : MonoBehaviour
             estadoPlayer = EstadoPlayer.normal;
             CancelInvoke("Parpadeo");
         }
+    }
+
+    private void IniciarJuego()
+    {
+        rb.velocity = Vector2.zero;
+
+        foreach (AudioSource audiosSource in audios)
+        {
+            audiosSource.volume = PlayerPrefs.GetFloat(UIConfigManager.VOLUMEN, 1); ;
+        }
+
+        if (gm.ObtenerCheckpoint())
+        {
+            transform.position = gm.ObtenerPosicion(posicionInicial);
+        }
+        else
+        {
+            transform.position = posicionInicial;
+        }
+
+        GameObject.Find("ParallaxBackground").transform.position = transform.position;
+
+        gm.IniciarParametros();
     }
 
     public EstadoPlayer ObtenerEstado()

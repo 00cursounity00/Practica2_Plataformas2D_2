@@ -1,0 +1,1936 @@
+fileFormatVersion: 2
+guid: 2af744dae2e16e64789d18c24b5dde9b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2759152716061183957
+    second: ninja_0
+  - first:
+      213: -5278401223733279651
+    second: ninja_1
+  - first:
+      213: 7650544888257819398
+    second: ninja_2
+  - first:
+      213: 6895404226505592437
+    second: ninja_3
+  - first:
+      213: -7284473103597384837
+    second: ninja_4
+  - first:
+      213: -9034525157243315170
+    second: ninja_5
+  - first:
+      213: 7766104227058486404
+    second: ninja_6
+  - first:
+      213: 3201718221767417709
+    second: ninja_7
+  - first:
+      213: -7152223486056173435
+    second: ninja_8
+  - first:
+      213: 5125832055453794580
+    second: ninja_9
+  - first:
+      213: -7637988016015160798
+    second: ninja_10
+  - first:
+      213: 8418297355577319098
+    second: ninja_11
+  - first:
+      213: 7909209693416409694
+    second: ninja_12
+  - first:
+      213: -3976133688951447518
+    second: ninja_13
+  - first:
+      213: -2891631275481539281
+    second: ninja_14
+  - first:
+      213: 3865020406490666318
+    second: ninja_15
+  - first:
+      213: -7409790378696218503
+    second: ninja_16
+  - first:
+      213: 5951295587313179317
+    second: ninja_17
+  - first:
+      213: -3703432290753294360
+    second: ninja_18
+  - first:
+      213: 6883102672462304247
+    second: ninja_19
+  - first:
+      213: -8897499924752706312
+    second: ninja_20
+  - first:
+      213: -576974666226715136
+    second: ninja_21
+  - first:
+      213: 7220827363671793285
+    second: ninja_22
+  - first:
+      213: 6547651502755696752
+    second: ninja_23
+  - first:
+      213: 5744790591687142572
+    second: ninja_24
+  - first:
+      213: 8531828861747428239
+    second: ninja_25
+  - first:
+      213: -4156448573965150469
+    second: ninja_26
+  - first:
+      213: 8788804885672863077
+    second: ninja_27
+  - first:
+      213: 3635317116020105284
+    second: ninja_28
+  - first:
+      213: 8979643530265072535
+    second: ninja_29
+  - first:
+      213: 2159503660030053025
+    second: ninja_30
+  - first:
+      213: -1364883061826073020
+    second: ninja_31
+  - first:
+      213: -5246721074474985194
+    second: ninja_32
+  - first:
+      213: 1727362370573195648
+    second: ninja_33
+  - first:
+      213: -1724097182941270261
+    second: ninja_34
+  - first:
+      213: 9075405081604254411
+    second: ninja_35
+  - first:
+      213: -5647702141442626855
+    second: ninja_36
+  - first:
+      213: 2054035973265000988
+    second: ninja_37
+  - first:
+      213: -3921542475579080334
+    second: ninja_38
+  - first:
+      213: -555068749233261842
+    second: ninja_39
+  - first:
+      213: 9063461254041156324
+    second: ninja_40
+  - first:
+      213: -6174732267972879476
+    second: ninja_41
+  - first:
+      213: 9122953474864415958
+    second: ninja_42
+  - first:
+      213: -3792316391171397225
+    second: ninja_43
+  - first:
+      213: -8971122660952578255
+    second: ninja_44
+  - first:
+      213: 1231729720793186655
+    second: ninja_45
+  - first:
+      213: -1291533545992509033
+    second: ninja_46
+  - first:
+      213: -8980310415400435575
+    second: ninja_47
+  - first:
+      213: -2129227742647700791
+    second: ninja_48
+  - first:
+      213: 8677364168252573902
+    second: ninja_49
+  - first:
+      213: 2353600433875940113
+    second: ninja_50
+  - first:
+      213: 7593346519081031818
+    second: ninja_51
+  - first:
+      213: 1709396064022279148
+    second: ninja_52
+  - first:
+      213: 4227754936043882122
+    second: ninja_53
+  - first:
+      213: 3118788914075092907
+    second: ninja_54
+  - first:
+      213: -1473371091884822680
+    second: ninja_55
+  - first:
+      213: 8216882258294003456
+    second: ninja_56
+  - first:
+      213: 5385164041763693826
+    second: ninja_57
+  - first:
+      213: -933883441546117345
+    second: ninja_58
+  - first:
+      213: 7691823753222316656
+    second: ninja_59
+  - first:
+      213: 1054911679504478455
+    second: ninja_60
+  - first:
+      213: 178507119041401354
+    second: ninja_61
+  - first:
+      213: 8484370669345729540
+    second: ninja_62
+  - first:
+      213: -491853083009482869
+    second: ninja_63
+  - first:
+      213: -690417907752720959
+    second: ninja_64
+  - first:
+      213: 4879645738272974987
+    second: ninja_65
+  - first:
+      213: -4280395034810221441
+    second: ninja_66
+  - first:
+      213: 2446231315646562765
+    second: ninja_67
+  - first:
+      213: -5941937245485770629
+    second: ninja_68
+  - first:
+      213: 6322926515393210474
+    second: ninja_69
+  - first:
+      213: -6308850540476551943
+    second: ninja_70
+  - first:
+      213: -5679244402039908098
+    second: ninja_71
+  - first:
+      213: -7413449673886331642
+    second: Yago_0
+  - first:
+      213: 2725818069050925030
+    second: Yago_1
+  - first:
+      213: -3279046644599825892
+    second: Yago_2
+  - first:
+      213: 6849799570966392252
+    second: Yago_3
+  - first:
+      213: 6608933108481665421
+    second: Yago_4
+  - first:
+      213: -7020187881083286511
+    second: Yago_5
+  - first:
+      213: 5059822368598614822
+    second: Yago_6
+  - first:
+      213: -8574059091643090741
+    second: Yago_7
+  - first:
+      213: -3915837103426704921
+    second: Yago_8
+  - first:
+      213: 3931740509997913600
+    second: Yago_9
+  - first:
+      213: 5142907151568087891
+    second: Yago_10
+  - first:
+      213: -3656774240869567027
+    second: Yago_11
+  - first:
+      213: -6734457361884359499
+    second: Yago_12
+  - first:
+      213: 3527434851055974599
+    second: Yago_13
+  - first:
+      213: 2521235223568167911
+    second: Yago_14
+  - first:
+      213: -1265271563885372127
+    second: Yago_15
+  - first:
+      213: -6960966740168676571
+    second: Yago_16
+  - first:
+      213: 3117568440353781759
+    second: Yago_17
+  - first:
+      213: -5516603672414434410
+    second: Yago_18
+  - first:
+      213: -4121253367730894846
+    second: Yago_19
+  - first:
+      213: -473233481773189292
+    second: Yago_s2
+  - first:
+      213: -7753563775213676674
+    second: Yago_s3
+  - first:
+      213: -3106601004814166276
+    second: Yago_22
+  - first:
+      213: 6012057925472617379
+    second: Yago_23
+  - first:
+      213: 1620316102957965206
+    second: Yago_24
+  - first:
+      213: -760659778310644070
+    second: Yago_s4
+  - first:
+      213: -4950276793319840045
+    second: Yago_s5
+  - first:
+      213: 4883165851758516753
+    second: Yago_27
+  - first:
+      213: 461440095494363065
+    second: Yago_28
+  - first:
+      213: 5825038520140166324
+    second: Yago_29
+  - first:
+      213: 7699899178955289865
+    second: Yago_30
+  - first:
+      213: 6105335267488632691
+    second: Yago_31
+  - first:
+      213: 373002615093353303
+    second: Yago_32
+  - first:
+      213: -8659760558747756458
+    second: Yago_33
+  - first:
+      213: -7290499468534276619
+    second: Yago_34
+  - first:
+      213: -5356981249629588440
+    second: Yago_35
+  - first:
+      213: -7706733883704323816
+    second: Yago_36
+  - first:
+      213: 2982600012386057582
+    second: Yago_37
+  - first:
+      213: -821300244424886177
+    second: Yago_38
+  - first:
+      213: -1931770351757125512
+    second: Yago_s0
+  - first:
+      213: 1488590442053122897
+    second: Yago_s1
+  - first:
+      213: -5832685031968071832
+    second: Yago_s6
+  - first:
+      213: -3712448105492446468
+    second: Yago_s7
+  - first:
+      213: 2234101440173509690
+    second: Yago_43
+  - first:
+      213: 3227054673437698417
+    second: Yago_44
+  - first:
+      213: 7249513478241496160
+    second: Yago_45
+  - first:
+      213: -5768674789527942316
+    second: Yago_46
+  - first:
+      213: 251342333757611993
+    second: Yago_47
+  - first:
+      213: 6786893623569298273
+    second: Yago_48
+  - first:
+      213: 5703255069997583128
+    second: Yago_49
+  - first:
+      213: -5890809592650555271
+    second: Yago_50
+  - first:
+      213: 4622167483117620226
+    second: Yago_51
+  - first:
+      213: -5520041221707471234
+    second: Yago_52
+  - first:
+      213: -3245033413502040435
+    second: Yago_53
+  - first:
+      213: 3138065756558369296
+    second: Yago_54
+  - first:
+      213: 3604105027081393736
+    second: Yago_55
+  - first:
+      213: 2857796449033803116
+    second: Yago_56
+  - first:
+      213: -1051565100412978760
+    second: Yago_57
+  - first:
+      213: -6852983658495454859
+    second: Yago_58
+  - first:
+      213: -8082981457841976821
+    second: Yago_59
+  - first:
+      213: -1454684846083984522
+    second: Yago_60
+  - first:
+      213: 301397299861445567
+    second: Yago_61
+  - first:
+      213: -3057115037574386380
+    second: Yago_62
+  - first:
+      213: 7767811813836691528
+    second: Yago_63
+  - first:
+      213: -5274560311782028131
+    second: Yago_64
+  - first:
+      213: -8621176974306909079
+    second: Yago_65
+  - first:
+      213: 384454856476354866
+    second: Yago_66
+  - first:
+      213: -7008519991031315110
+    second: Yago_67
+  - first:
+      213: 7080498829310347231
+    second: Yago_68
+  - first:
+      213: 8507451901325606204
+    second: Yago_69
+  - first:
+      213: 6599185102563163806
+    second: Yago_70
+  - first:
+      213: 4663928220388505225
+    second: Yago_71
+  - first:
+      213: 8712702912139062276
+    second: Yago_72
+  - first:
+      213: -1414941266455915891
+    second: Yago_73
+  - first:
+      213: 5373085154131285795
+    second: Yago_74
+  - first:
+      213: -1124958400201740282
+    second: Yago_75
+  - first:
+      213: -2630343468662880804
+    second: Yago_76
+  - first:
+      213: -2107312502878701431
+    second: Yago_77
+  - first:
+      213: 157496269099280682
+    second: Yago_78
+  - first:
+      213: 2969647164762315826
+    second: Yago_79
+  - first:
+      213: 2997464774436230648
+    second: Yago_80
+  - first:
+      213: -9036212615983741340
+    second: Yago_81
+  - first:
+      213: 4932164586310822739
+    second: Yago_82
+  - first:
+      213: -4646980146064175053
+    second: Yago_83
+  - first:
+      213: -6825954932215501978
+    second: Yago_84
+  - first:
+      213: 6058919955184360242
+    second: Yago_85
+  - first:
+      213: -3234297874776270044
+    second: Yago_86
+  - first:
+      213: 2727117533845624626
+    second: Yago_87
+  - first:
+      213: 8599544564941684276
+    second: Yago_88
+  - first:
+      213: 621602382404922084
+    second: Yago_89
+  - first:
+      213: -3591210637944502490
+    second: Yago_90
+  - first:
+      213: 1601004778325904396
+    second: Yago_91
+  - first:
+      213: -8052017711489281347
+    second: Yago_92
+  - first:
+      213: 5230838150560909777
+    second: Yago_93
+  - first:
+      213: -5697192870866704574
+    second: Yago_94
+  - first:
+      213: -4004253682376436316
+    second: Yago_95
+  - first:
+      213: 7689523584059447026
+    second: Yago_96
+  - first:
+      213: -2801286646895389402
+    second: Yago_97
+  - first:
+      213: -8596267866432056554
+    second: Yago_98
+  - first:
+      213: 107653675086655637
+    second: Yago_99
+  - first:
+      213: -3586626167662818848
+    second: Yago_100
+  - first:
+      213: -2797921366479338583
+    second: Yago_101
+  - first:
+      213: -473233481773189292
+    second: Yago_20
+  - first:
+      213: -487166448996867723
+    second: ImagenVidas
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Yago_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 2109
+        width: 94
+        height: 162
+      alignment: 9
+      pivot: {x: 0.6164059, y: 0.35559535}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d030d21901f6cf439293cf8939ca333
+      internalID: -7413449673886331642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_1
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 2111
+        width: 94
+        height: 162
+      alignment: 9
+      pivot: {x: 0.5923218, y: 0.35792372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c680a071770bc0b4a89942cedc6eb005
+      internalID: 2725818069050925030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_2
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 2108
+        width: 94
+        height: 162
+      alignment: 9
+      pivot: {x: 0.604364, y: 0.35559535}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3933e2280a656b4a82677db2dd61ab9
+      internalID: -3279046644599825892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_3
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1895
+        width: 106
+        height: 162
+      alignment: 9
+      pivot: {x: 0.5457038, y: 0.37610766}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 588416c8b61c0de4595f1dd871b9c6c6
+      internalID: 6849799570966392252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_4
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1894
+        width: 102
+        height: 162
+      alignment: 9
+      pivot: {x: 0.5915997, y: 0.3632918}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6236c7e5c660e3a479888cdde96317ac
+      internalID: 6608933108481665421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_5
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 1883
+        width: 91
+        height: 162
+      alignment: 9
+      pivot: {x: 0.5570404, y: 0.4145568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4a09252d255004898934fe1ecea92e
+      internalID: -7020187881083286511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_6
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1880
+        width: 100
+        height: 162
+      alignment: 9
+      pivot: {x: 0.61419433, y: 0.40387717}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64193ae71e470ca48839f4860e45a510
+      internalID: 5059822368598614822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_7
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 1887
+        width: 106
+        height: 162
+      alignment: 9
+      pivot: {x: 0.59467304, y: 0.3526114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab409308675d6f47ac65792cdbc9d62
+      internalID: -8574059091643090741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_8
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 1875
+        width: 94
+        height: 162
+      alignment: 9
+      pivot: {x: 0.5625831, y: 0.40814888}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b9bb3088dee734c939d9757a0cd3f5
+      internalID: -3915837103426704921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_9
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1673
+        width: 87
+        height: 162
+      alignment: 9
+      pivot: {x: 0.5951081, y: 0.37401137}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b9515c9abdbcb40876f9ebab44f274
+      internalID: 3931740509997913600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_10
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1664
+        width: 286
+        height: 162
+      alignment: 9
+      pivot: {x: 0.46913978, y: 0.34677085}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32689ebefbe8f342a5109e72ccea137
+      internalID: 5142907151568087891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_11
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1660
+        width: 135
+        height: 162
+      alignment: 9
+      pivot: {x: 0.44688088, y: 0.31612593}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a754e56996b0322458e5da08e9696945
+      internalID: -3656774240869567027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_12
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 1642
+        width: 256
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6785885a15358734ab5938b0bc7dfc7c
+      internalID: -6734457361884359499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_13
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 1632
+        width: 254
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6672e64c96e76ce4d8ff320912511e9f
+      internalID: 3527434851055974599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_14
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 1630
+        width: 232
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b5607723a5a1f42b00eb0f932319e8
+      internalID: 2521235223568167911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_16
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 1404
+        width: 118
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8807a6c0a1b0c946ba1fdd2d19841b6
+      internalID: -6960966740168676571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_17
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 1403
+        width: 115
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1740f63a548c9468cf16e2142cc3aa
+      internalID: 3117568440353781759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_s2
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1380
+        width: 126
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4225624217fca0441a2c543ca1ab6716
+      internalID: -473233481773189292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_s3
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 1367
+        width: 117
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86413774744a9f64e90a49b09b59837f
+      internalID: -7753563775213676674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_22
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 1389
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5069e57d79f8cb04fae42441f104de39
+      internalID: -3106601004814166276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_24
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 1384
+        width: 115
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d182bf1eb7b62e4c92c02cb54cacf66
+      internalID: 1620316102957965206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_s4
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 1371
+        width: 129
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a39fa75a3539dc4e85ac354dd43ed0f
+      internalID: -760659778310644070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_s5
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 1370
+        width: 117
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4da5fe74ae4045429ce038b72448601
+      internalID: -4950276793319840045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_s0
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1138
+        width: 98
+        height: 162
+      alignment: 9
+      pivot: {x: 0.53882504, y: 0.53131557}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7794fcd1beae6241a9cf7e1d5507f19
+      internalID: -1931770351757125512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_s1
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1144
+        width: 100
+        height: 162
+      alignment: 9
+      pivot: {x: 0.53487796, y: 0.5352301}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9572ef2c7b9ba14b90259352f668607
+      internalID: 1488590442053122897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_s6
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 1149
+        width: 109
+        height: 162
+      alignment: 9
+      pivot: {x: 0.5203622, y: 0.44128266}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a919e0c2bc3eb8d4e83de7e2c649f019
+      internalID: -5832685031968071832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_s7
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 1150
+        width: 110
+        height: 162
+      alignment: 9
+      pivot: {x: 0.51441205, y: 0.44911176}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47db36530c10eb247a2a4c1fc6b5240d
+      internalID: -3712448105492446468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_43
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1150
+        width: 104
+        height: 162
+      alignment: 9
+      pivot: {x: 0.5117246, y: 0.46487466}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b55aaf224cd57f146bb49b1529526ce9
+      internalID: 2234101440173509690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_44
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1127
+        width: 292
+        height: 162
+      alignment: 9
+      pivot: {x: 0.5041759, y: 0.45483926}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c3bf93074996345b372ef0849eeee6
+      internalID: 3227054673437698417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_45
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 1124
+        width: 153
+        height: 162
+      alignment: 9
+      pivot: {x: 0.5026568, y: 0.46487466}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa55fdff8417ca41afe634d682c9ee8
+      internalID: 7249513478241496160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_46
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 911
+        width: 155
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50279563b534d2946b623613d47814bc
+      internalID: -5768674789527942316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_47
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 999
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e96da7f8e0a1e4b8d06ab95b415efd
+      internalID: 251342333757611993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_48
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 910
+        width: 161
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd1021beb6df5043aed0c23d8ee97b7
+      internalID: 6786893623569298273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_49
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 917
+        width: 93
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f621da6512f060348aec19f6123ca1a5
+      internalID: 5703255069997583128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_50
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 916
+        width: 96
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa05ae217697c647975e8bd5eedf270
+      internalID: -5890809592650555271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_51
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 912
+        width: 96
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2f0bfadeeb8c0469100732c6e09620
+      internalID: 4622167483117620226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_52
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 868
+        width: 280
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f291ef4894a077d46a9de0878e01edbd
+      internalID: -5520041221707471234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_53
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 683
+        width: 126
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffbd60bfc59a362498fd1b32f2a7c122
+      internalID: -3245033413502040435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_54
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 680
+        width: 119
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdef49761d7c64f4c9d9498e2edabb76
+      internalID: 3138065756558369296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_55
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 679
+        width: 114
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea7e3b9d71014645a797377bc42918a
+      internalID: 3604105027081393736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_56
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 678
+        width: 114
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16eab9aea6c056e4b951cb0c6c7228bf
+      internalID: 2857796449033803116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_57
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 674
+        width: 129
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66683d32db5cb34ebfa0b20146f1088
+      internalID: -1051565100412978760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_58
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 675
+        width: 195
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94854ebad9027c48ac993420ada12f8
+      internalID: -6852983658495454859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_59
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 662
+        width: 123
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc3a6d7352ebb44ca101a3ed6f13236
+      internalID: -8082981457841976821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_60
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 397
+        width: 126
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ff02550ab571246890a7a649970638
+      internalID: -1454684846083984522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_61
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 394
+        width: 143
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c802d794701c20446914d23540f7913a
+      internalID: 301397299861445567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_62
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 393
+        width: 122
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527712b82ffa0274caffb3cd2763f9a8
+      internalID: -3057115037574386380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_63
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 389
+        width: 125
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eafb518f126263343870a837638dd1ce
+      internalID: 7767811813836691528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_64
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 380
+        width: 135
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a05bfd79a69bfb49b1690b67cb4e315
+      internalID: -5274560311782028131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_65
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 380
+        width: 133
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff329c69313a5d468d6ae1d5dab2b75
+      internalID: -8621176974306909079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_66
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 377
+        width: 135
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40cc5d2122a04d542a7056d55886402d
+      internalID: 384454856476354866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_67
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 375
+        width: 133
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61abb04ed99cf4140939cb1dc02d07e5
+      internalID: -7008519991031315110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_68
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 138
+        width: 141
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2fd00b828567cf45897b3b16b798fbf
+      internalID: 7080498829310347231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_69
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 139
+        width: 215
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73dc5a615201d84581a12690b6f07c7
+      internalID: 8507451901325606204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_70
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 130
+        width: 152
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7714d6eec60344c43a4e764772da1d98
+      internalID: 6599185102563163806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_15
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 1123
+        width: 100
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834546ba5884b214abb48196899eae6d
+      internalID: -1265271563885372127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_18
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 140
+        width: 171
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3daa21927e246f74e9c2d4a833ab9c59
+      internalID: -5516603672414434410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_19
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 135
+        width: 190
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb74bf81bd78ed45bcb42cbe24f453b
+      internalID: -4121253367730894846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_20
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 2070
+        width: 103
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d03c9274d2213c4bb78e817bf43f672
+      internalID: -473233481773189292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_23
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 2070
+        width: 93
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4e57582ce23a7548a29fcff6fa9b159
+      internalID: 6012057925472617379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImagenVidas
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1889
+        width: 130
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d2286e7a9c548645a6641d1b468bae2
+      internalID: -487166448996867723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
