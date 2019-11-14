@@ -12,7 +12,8 @@ public class Capsula : MonoBehaviour
         if (collision.gameObject.CompareTag("Proyectil"))
         {
             Instantiate(item, transform.position, transform.rotation);
-            Instantiate(explosion, transform.position, transform.rotation);
+            GameObject go = Instantiate(explosion, transform.position, transform.rotation);
+            go.GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat(UIConfigManager.VOLUMEN, 1);
             Destroy(gameObject);
         }
     }

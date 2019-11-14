@@ -70,12 +70,14 @@ public class GameManager : MonoBehaviour
 
     public bool RestarVida()
     {
+        audioMusic.Stop();
         bool sinVidas = false;
 
         numeroVidas--;
 
         if (numeroVidas < 0)
         {
+            Invoke("PlayGameOver", 0.4f);
             numeroVidas = numeroVidasMax;
             checkpointActivo = false;
             sinVidas = true;
@@ -83,11 +85,25 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.DeleteKey(UIConfigManager.PARAM_Y);
             PlayerPrefs.DeleteKey(UIConfigManager.CHECKPOINT_ACTIVO);
         }
+        else
+        {
+            Invoke("PlayPerderVida", 0.4f);
+        }
 
         PlayerPrefs.SetInt(UIConfigManager.VIDAS, numeroVidas);
         PlayerPrefs.Save();
 
         return sinVidas;
+    }
+
+    private void PlayPerderVida()
+    {
+        audioMusic.PlayOneShot(audioClips[2]);
+    }
+
+    private void PlayGameOver()
+    {
+        audioMusic.PlayOneShot(audioClips[3]);
     }
 
     public void SumarPuntos(int puntos)
