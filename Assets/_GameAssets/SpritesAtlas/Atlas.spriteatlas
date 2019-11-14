@@ -31,7 +31,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 1f7913308872bb24aa0a74b8046a85ec, type: 3}
-    totalSpriteSurfaceArea: 172032
+    totalSpriteSurfaceArea: 188416
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -56,10 +56,12 @@ SpriteAtlas:
   - {fileID: 21300000, guid: e50e50b7b6b6a234485f5b06fb96256c, type: 3}
   - {fileID: 21300000, guid: a92aad58fb9214f43a582a117e7fd2f8, type: 3}
   - {fileID: 21300000, guid: 718e7d985ff783245a8ce5dd6b4bf694, type: 3}
+  - {fileID: 21300000, guid: d274cf98ee568ca4c9c9a5a8b1b33979, type: 3}
   - {fileID: 21300000, guid: 37e590d877cdf74439ea4dc93677ec02, type: 3}
   - {fileID: 21300000, guid: 1cca8fe8555ae094ea857b375a1541ac, type: 3}
   - {fileID: 21300000, guid: 6527adf8a3f5e0949be8cfe0fb1ff857, type: 3}
   - {fileID: 21300000, guid: c3244e19905d535469949e6e4d998f00, type: 3}
+  - {fileID: 21300000, guid: 4e0b8d792b08dd24fb5317391b5a14f3, type: 3}
   - {fileID: 21300000, guid: 5ddb7f8923fa26e4c971d936edaf98fa, type: 3}
   - {fileID: 21300000, guid: 6276c4a98d24dbf4fa802523109b1a40, type: 3}
   - {fileID: 21300000, guid: de04a3b9faa80ed41b9db11ad527c8e8, type: 3}
@@ -68,10 +70,12 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 47f50e9a4ebf49240931e64e264a835b, type: 3}
   - {fileID: 21300000, guid: 0dcb42cabae884a438b68c6dbd837083, type: 3}
   - {fileID: 21300000, guid: b3578a0bb453be54f966a74010a46bae, type: 3}
+  - {fileID: 21300000, guid: 294a686bd93102845823539a29b06ece, type: 3}
   - {fileID: 21300000, guid: a713b51cc02102349a95d1d01612875e, type: 3}
   - {fileID: 21300000, guid: 1cf716bcdf2e09346860874b14856358, type: 3}
   - {fileID: 21300000, guid: b445aaec8cfa6d44698aae137aaad980, type: 3}
   - {fileID: 21300000, guid: 2cedeffc6d64df54cae3008903b3c5e9, type: 3}
+  - {fileID: 21300000, guid: 993793cd4cd4262499b88e92ca7918a7, type: 3}
   - {fileID: 21300000, guid: 8908169ecf749294d9c7ba1b30c3883f, type: 3}
   - {fileID: 21300000, guid: 849d9eae8a806ce46a0897211c1b6ff8, type: 3}
   - {fileID: 21300000, guid: 79ba20ce427e485488b462423eb9495a, type: 3}
@@ -99,10 +103,12 @@ SpriteAtlas:
   - tile22
   - tile5
   - tile21
+  - tile45
   - tile18
   - tile37
   - tile6
   - tile20
+  - tile43
   - tile16
   - tile8
   - tile12
@@ -111,10 +117,12 @@ SpriteAtlas:
   - tile27
   - tile13
   - tile2
+  - tile46
   - tile40
   - tile30
   - tile41
   - tile24
+  - tile44
   - tile10
   - tile39
   - tile23
