@@ -32,6 +32,11 @@ public class Pocion : MonoBehaviour
             else if (tipo == 1)
             {
                 gm.RecargarPoder(cantidad);
+
+                if (collision.gameObject.GetComponent<Player>().ObtenerPoderActivado())
+                {
+                    collision.gameObject.GetComponent<Player>().AumentarTiempoPoder();
+                }
             }
             Destroy(gameObject);
         }

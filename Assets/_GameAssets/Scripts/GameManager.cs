@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
     private Player player;
     private AudioSource audioMusic;
 
-    
+
     private void Start()
     {
         ui = GameObject.Find("UIManager").GetComponent<UIManager>();
@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
     }
 
     private void Update()
-    {        
+    {
         if (tiempo < 0)
         {
             StopCoroutine("CuentaAtras");
@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            ui.ActualizarVida(vida/vidaMax);
+            ui.ActualizarVida(vida / vidaMax);
             return false;
         }
     }
@@ -170,7 +170,7 @@ public class GameManager : MonoBehaviour
         ui.ActualizarTiempo(FormatearTiempo(tiempo));
         ui.ActualizarPuntuacion(puntuacion);
         ui.ActualizarPuntuacionMax(puntuacionMax);
-        
+
         if (PlayerPrefs.GetInt(UIConfigManager.NIVEL_EMPEZADO, 0) == 0 && PlayerPrefs.GetInt(UIConfigManager.NIVEL_ACTUAL, 1) == 1)
         {
             Invoke("EmpezarCapituloYNivel", 1);
@@ -218,7 +218,7 @@ public class GameManager : MonoBehaviour
         StartCoroutine("CuentaAtras");
     }
 
-    private string FormatearTiempo (int tiempo)
+    private string FormatearTiempo(int tiempo)
     {
         string stringTiempo;
         int minutos;
@@ -247,7 +247,7 @@ public class GameManager : MonoBehaviour
             vida = vidaMax;
         }
 
-        ui.ActualizarVida(vida/vidaMax);
+        ui.ActualizarVida(vida / vidaMax);
     }
 
     public void RecargarPoder(float poderRecarga)
@@ -259,7 +259,7 @@ public class GameManager : MonoBehaviour
             poder = poderMax;
         }
 
-        ui.ActualizarPoder(poder/poderMax);
+        ui.ActualizarPoder(poder / poderMax);
     }
 
     public void ResetNivel()
@@ -284,13 +284,33 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-       
+
     public void SumarVida()
     {
         if (numeroVidas < numeroVidasMax)
         {
             numeroVidas++;
             ui.ActualizarVidas(numeroVidas);
+        }
+    }
+
+    public float ObtenerPoder()
+    {
+        return poder;
+    }
+
+    public void ActivarPoder()
+    {
+        StartCoroutine("GastarPoder");
+    }
+
+    private IEnumerator GastarPoder()
+    {
+        while (poder != 0)
+        {
+            yield return new WaitForSeconds(1);
+            poder--;
+            ui.ActualizarPoder(poder / poderMax);
         }
     }
 }

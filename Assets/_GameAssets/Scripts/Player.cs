@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Player : MonoBehaviour
 {
@@ -10,7 +11,9 @@ public class Player : MonoBehaviour
     [SerializeField] float cadenciaDisparo;
     [SerializeField] float fuerzaSalto;
     [SerializeField] GameObject prefabProyectil;
+    [SerializeField] GameObject prefabProyectil2;
     [SerializeField] GameObject explosionPlayer;
+    [SerializeField] GameObject efectoPoder;
     [SerializeField] Transform puntoDisparoSuelo;
     [SerializeField] Transform puntoDisparoAire;
     [SerializeField] Transform detectorSuelo;
@@ -25,7 +28,7 @@ public class Player : MonoBehaviour
     private GameManager gm;
     private Animator animator;
     private bool enSuelo = false;
-    public enum EstadoPlayer {normal, recibiendoDano, teletransportandose, empezandoAJugar};
+    public enum EstadoPlayer {normal, inmune, teletransportandose, empezandoAJugar};
     public EstadoPlayer estadoPlayer = EstadoPlayer.normal;
     private Vector2 posicionInicial;
     private int parpadeos = 0;
@@ -33,18 +36,21 @@ public class Player : MonoBehaviour
     private UIManager ui;
     private float gravedad;
     private Transform destinoTeletransporte;
+    private bool poderActivado = false;
 
     private const int AUDIO_DISPARO = 0;
     private const int AUDIO_SALTO = 1;
     private const int AUDIO_EXPLOSION = 2;
     private const int AUDIO_DANO = 3;
+    private const int AUDIO_DISPARO_2 = 4;
 
 
     //Metodos MonoBehaviour
 
     void Start()
     {
-        posicionInicial = GameObject.Find("PosicionInicialPlayer").transform.position;
+        //posicionInicial = GameObject.Find("PosicionInicialPlayer").transform.position;
+        posicionInicial = transform.position;
         rb = GetComponent<Rigidbody2D>();
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         animator = GetComponent<Animator>();
@@ -56,6 +62,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        print(rb.velocity);
         ObtenerEnSuelo();
 
         if (Input.GetButtonDown("Fire1"))
@@ -66,6 +73,11 @@ public class Player : MonoBehaviour
         if (Input.GetButtonDown("Fire2"))
         {
             Saltar();
+        }
+
+        if (Input.GetButtonDown("Fire3"))
+        {
+            ActivarPoder();
         }
     }
 
@@ -136,22 +148,33 @@ public class Player : MonoBehaviour
     {
         if (estadoPlayer != EstadoPlayer.teletransportandose && estadoPlayer != EstadoPlayer.empezandoAJugar && tieneCadencia == false && !animator.GetBool("recibiendoDano"))
         {
-            audios[AUDIO_DISPARO].Play();
             tieneCadencia = true;
             Invoke("QuitarCadencia", cadenciaDisparo);
             animator.SetBool("disparando", true);
             Invoke("QuitarDisparar", 0.1f);
+            GameObject prefab;
+
+            if (!poderActivado)
+            {
+                prefab = prefabProyectil;
+                audios[AUDIO_DISPARO].Play();
+            }
+            else
+            {
+                prefab = prefabProyectil2;
+                audios[AUDIO_DISPARO_2].Play();
+            }
 
             if (animator.GetBool("enSuelo"))
             {
                 //print("suelo");
-                GameObject proyectil = Instantiate(prefabProyectil, puntoDisparoSuelo.position, puntoDisparoSuelo.rotation);
+                GameObject proyectil = Instantiate(prefab, puntoDisparoSuelo.position, puntoDisparoSuelo.rotation);
                 proyectil.GetComponent<Rigidbody2D>().AddForce(puntoDisparoSuelo.right * fuerzaDisparo);
             }
             else
             {
                 //print("aire");
-                GameObject proyectil = Instantiate(prefabProyectil, puntoDisparoAire.position, puntoDisparoAire.rotation);
+                GameObject proyectil = Instantiate(prefab, puntoDisparoAire.position, puntoDisparoAire.rotation);
                 proyectil.GetComponent<Rigidbody2D>().AddForce(puntoDisparoAire.right * fuerzaDisparo);
             }
         }
@@ -220,6 +243,37 @@ public class Player : MonoBehaviour
         animator.SetBool("enSuelo", false);
         return false;
     }
+    
+    private void ActivarPoder()
+    {
+        if (estadoPlayer != EstadoPlayer.teletransportandose && estadoPlayer != EstadoPlayer.empezandoAJugar && estadoPlayer != EstadoPlayer.inmune && gm.ObtenerPoder() > 0 && !animator.GetBool("recibiendoDano"))
+        {
+            Sequence s = DOTween.Sequence();
+            s.Append(GetComponent<SpriteRenderer>().DOColor(new Color(1, 0.8f, 0), 0.5f));
+            s.Append(GetComponent<SpriteRenderer>().DOColor(new Color(1, 1, 1), 0.5f));
+            s.SetLoops(-1);
+            efectoPoder.SetActive(true);
+            estadoPlayer = EstadoPlayer.inmune;
+            poderActivado = true;
+            gm.ActivarPoder();
+            Invoke("CancelarPoder", gm.ObtenerPoder());
+        }
+    }
+
+    private void CancelarPoder()
+    {
+        efectoPoder.SetActive(false);
+        GetComponent<SpriteRenderer>().color = new Color(1, 1, 1);
+        estadoPlayer = EstadoPlayer.normal;
+        poderActivado = false;
+        DOTween.KillAll();
+    }
+
+    public void AumentarTiempoPoder()
+    {
+        CancelInvoke("CancelarPoder");
+        Invoke("CancelarPoder", gm.ObtenerPoder());
+    }
 
     private void Mover(float velocidadX)
     {
@@ -253,7 +307,7 @@ public class Player : MonoBehaviour
                 animator.SetBool("recibiendoDano", true);
                 //Invoke("QuitarRecibirDano", 0.5f);
             }
-            estadoPlayer = EstadoPlayer.recibiendoDano;
+            estadoPlayer = EstadoPlayer.inmune;
             tieneCadencia = false;
             animator.SetBool("disparando", false);
         }
@@ -271,7 +325,7 @@ public class Player : MonoBehaviour
         estadoPlayer = EstadoPlayer.normal;
     }
 
-    public void Teletransportar ()
+    public void Teletransportar()
     {
         rb.isKinematic = true;
         rb.velocity = Vector2.zero;
@@ -306,6 +360,7 @@ public class Player : MonoBehaviour
     public void PerderVida(bool conExplosion)
     {
         CancelInvoke("Parpadeo");
+        efectoPoder.SetActive(false);
         GetComponent<SpriteRenderer>().enabled = false;
 
         if (conExplosion)
@@ -391,5 +446,10 @@ public class Player : MonoBehaviour
     public EstadoPlayer ObtenerEstado()
     {
         return estadoPlayer;
+    }
+
+    public bool ObtenerPoderActivado()
+    {
+        return poderActivado;
     }
 }

@@ -30,8 +30,8 @@ public class Bomba : MonoBehaviour
         Collider2D[] cds = Physics2D.OverlapCircleAll(transform.position, 0.5f);
         foreach (Collider2D cd in cds)
         {
-            if (cd.gameObject.GetComponent<Player>() != null)
-            {
+            if (cd.gameObject.CompareTag("Player") && cd.gameObject.GetComponent<Player>().ObtenerEstado() == Player.EstadoPlayer.normal)
+            { 
                 if (cd.gameObject.transform.position.x > transform.position.x)
                 {
                     cd.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(1, 1.5f) * fuerza;

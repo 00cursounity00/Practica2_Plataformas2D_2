@@ -122,7 +122,6 @@ public class Background : MonoBehaviour
 
                 factorY = 0;
                 transform.Translate(new Vector2 (factorX, factorY));
-                transform.position = new Vector2 (transform.position.x, playerTransform.position.y);
             }
 
             difX = playerTransform.position.x - transform.position.x;
@@ -144,6 +143,8 @@ public class Background : MonoBehaviour
             {
                 Destroy(gameObject);
             }
+
+            transform.position = new Vector2(transform.position.x, playerTransform.position.y);
         }
 
         posicionX = playerTransform.position.x;

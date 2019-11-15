@@ -530,6 +530,12 @@ TextureImporter:
   - first:
       213: -487166448996867723
     second: ImagenVidas
+  - first:
+      213: -3863521243428461984
+    second: Yago_supershoot1
+  - first:
+      213: 5033286792780764739
+    second: Yago_supershoot2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -1902,6 +1908,48 @@ TextureImporter:
       bones: []
       spriteID: 8d2286e7a9c548645a6641d1b468bae2
       internalID: -487166448996867723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_supershoot1
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 2066
+        width: 140
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990ba52b77d6b794685cc3d36c33b40d
+      internalID: -3863521243428461984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yago_supershoot2
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 2067
+        width: 140
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58816d9731cfb6f40a9107e808943e15
+      internalID: 5033286792780764739
       vertices: []
       indices: 
       edges: []
