@@ -25,7 +25,8 @@ public class Bomba : MonoBehaviour
 
     public void Explotar()
     {
-        Instantiate (explosion, transform.position, transform.rotation);
+        GameObject go = Instantiate(explosion, transform.position, transform.rotation);
+        go.GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat(UIConfigManager.VOLUMEN, 1);
         Collider2D[] cds = Physics2D.OverlapCircleAll(transform.position, 0.5f);
         foreach (Collider2D cd in cds)
         {

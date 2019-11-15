@@ -19,6 +19,6 @@ public class MusicManager : MonoBehaviour
     public void CambiarVolumen()
     {
         audioSource.volume = volumenSlider.value;
-        VolumenTexto.text = ("Volmen " + ((int)(volumenSlider.value * 100)) + "%");
+        VolumenTexto.text = ("Volume " + ((int)(volumenSlider.value * 100)) + "%");
     }
 }

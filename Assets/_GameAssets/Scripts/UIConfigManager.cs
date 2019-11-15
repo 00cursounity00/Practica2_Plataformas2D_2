@@ -34,7 +34,7 @@ public class UIConfigManager : MonoBehaviour
         sonido.isOn = PlayerPrefs.GetInt(SONIDO, 1) == 1 ? true : false;
         controlesTactiles.isOn = PlayerPrefs.GetInt(CONTROLES_TACTILES, 1) == 1 ? true : false;
         volumenSlider.value = PlayerPrefs.GetFloat(VOLUMEN, 1);
-        VolumenTexto.text = ("Volmen " + ((int)(volumenSlider.value * 100)) + "%");
+        VolumenTexto.text = ("Volume " + ((int)(volumenSlider.value * 100)) + "%");
         PlayerPrefs.DeleteKey(CHECKPOINT_ACTIVO);
         PlayerPrefs.DeleteKey(NIVEL_EMPEZADO);
         PlayerPrefs.DeleteKey(NIVEL_ACTUAL);

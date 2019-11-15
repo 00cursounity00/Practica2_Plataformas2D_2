@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 8220669649350409746}
   - component: {fileID: 8888360915460143572}
   - component: {fileID: 8888360915214388065}
-  - component: {fileID: -4031505135773252527}
-  - component: {fileID: 8344558890367038551}
   m_Layer: 8
   m_Name: PlataformaFija2
   m_TagString: Suelo
@@ -52,7 +50,7 @@ PlatformEffector2D:
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
-  m_SurfaceArc: 180
+  m_SurfaceArc: 120
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
@@ -82,38 +80,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.6314478, y: 0.5704887}
   m_EdgeRadius: 0
---- !u!70 &-4031505135773252527
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1687815618733544114}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: c5d18b4b2a62e864da4e3b3a5f2dda60, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 1
-  m_UsedByComposite: 0
-  m_Offset: {x: 2.32, y: -0.01858902}
-  m_Size: {x: 0.022140503, y: 0.5513191}
-  m_Direction: 0
---- !u!70 &8344558890367038551
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1687815618733544114}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: c5d18b4b2a62e864da4e3b3a5f2dda60, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 1
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.31181335, y: -0.01858902}
-  m_Size: {x: 0.022140503, y: 0.5513191}
-  m_Direction: 0
 --- !u!1 &2989332305007191919
 GameObject:
   m_ObjectHideFlags: 0

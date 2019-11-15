@@ -37,6 +37,7 @@ public class Player : MonoBehaviour
     private const int AUDIO_DISPARO = 0;
     private const int AUDIO_SALTO = 1;
     private const int AUDIO_EXPLOSION = 2;
+    private const int AUDIO_DANO = 3;
 
 
     //Metodos MonoBehaviour
@@ -242,6 +243,7 @@ public class Player : MonoBehaviour
     {
         if (estadoPlayer == EstadoPlayer.normal)
         {
+            audios[AUDIO_DANO].Play();
             if (gm.QuitarVida(dano))
             {
                 PerderVida(true);
@@ -257,6 +259,50 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void QuitarRecibirDano()
+    {
+        //Invoke("QuitarEstadoRecibiendoDano", 1.6f);
+        InvokeRepeating("Parpadeo", 0, 0.2f);
+        animator.SetBool("recibiendoDano", false);
+    }
+
+    private void QuitarEstadoRecibiendoDano()
+    {
+        estadoPlayer = EstadoPlayer.normal;
+    }
+
+    public void Teletransportar ()
+    {
+        rb.isKinematic = true;
+        rb.velocity = Vector2.zero;
+        foreach (CapsuleCollider2D cc in GetComponents<CapsuleCollider2D>())
+        {
+            cc.enabled = false;
+        }
+
+        estadoPlayer = EstadoPlayer.teletransportandose;
+        animator.SetBool("corriendo", false);
+        ui.FundirNegro(1, 1.5f);
+        CancelInvoke();
+        GetComponent<SpriteRenderer>().enabled = true;
+        Invoke("TerminarTeletransportar", 1.5f);
+    }
+
+    public void TerminarTeletransportar()
+    {
+        GetComponent<SpriteRenderer>().enabled = true;
+        rb.isKinematic = false;
+
+        foreach (CapsuleCollider2D cc in GetComponents<CapsuleCollider2D>())
+        {
+            cc.enabled = true;
+        }
+
+        estadoPlayer = EstadoPlayer.normal;
+        transform.position = GameObject.Find("DestinoTeletransporte").transform.position;
+        ui.FundirNegro(0, 1.5f);
+    }
+
     public void PerderVida(bool conExplosion)
     {
         CancelInvoke("Parpadeo");
@@ -265,7 +311,7 @@ public class Player : MonoBehaviour
         if (conExplosion)
         {
             audios[AUDIO_EXPLOSION].Play();
-            explosionPlayer.SetActive(true);
+            Instantiate(explosionPlayer, transform.position, transform.rotation);
         }
         //rb.isKinematic = true;
         //rb.velocity = Vector2.zero;
@@ -303,50 +349,6 @@ public class Player : MonoBehaviour
         gm.ResetNivel();
     }
 
-    public void Teletransportar ()
-    {
-        rb.isKinematic = true;
-        rb.velocity = Vector2.zero;
-        foreach (CapsuleCollider2D cc in GetComponents<CapsuleCollider2D>())
-        {
-            cc.enabled = false;
-        }
-
-        estadoPlayer = EstadoPlayer.teletransportandose;
-        animator.SetBool("corriendo", false);
-        ui.FundirNegro(1, 1.5f);
-        CancelInvoke();
-        GetComponent<SpriteRenderer>().enabled = true;
-        Invoke("TerminarTeletransportar", 1.5f);
-    }
-
-    public void TerminarTeletransportar()
-    {
-        GetComponent<SpriteRenderer>().enabled = true;
-        rb.isKinematic = false;
-
-        foreach (CapsuleCollider2D cc in GetComponents<CapsuleCollider2D>())
-        {
-            cc.enabled = true;
-        }
-
-        estadoPlayer = EstadoPlayer.normal;
-        transform.position = GameObject.Find("DestinoTeletransporte").transform.position;
-        ui.FundirNegro(0, 1.5f);
-    }
-
-    private void QuitarRecibirDano()
-    {
-        //Invoke("QuitarEstadoRecibiendoDano", 1.6f);
-        InvokeRepeating("Parpadeo", 0, 0.2f);
-        animator.SetBool("recibiendoDano", false);
-    }
-
-    private void QuitarEstadoRecibiendoDano()
-    {
-        estadoPlayer = EstadoPlayer.normal;
-    }
-
     private void Parpadeo ()
     {
         if (parpadeos < 8)
@@ -356,6 +358,7 @@ public class Player : MonoBehaviour
         }
         else
         {
+            GetComponent<SpriteRenderer>().enabled = true;
             parpadeos = 0;
             estadoPlayer = EstadoPlayer.normal;
             CancelInvoke("Parpadeo");

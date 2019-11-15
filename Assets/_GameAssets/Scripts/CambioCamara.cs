@@ -21,21 +21,24 @@ public class CambioCamara : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (transform.position.x < playerTransform.position.x)
+        if (collision.gameObject.name == "Yago")
         {
-            virtualCamera.GetCinemachineComponent<Cinemachine.CinemachineFramingTransposer>().m_ScreenX = nuevoScreenX;
-            virtualCamera.GetCinemachineComponent<Cinemachine.CinemachineFramingTransposer>().m_ScreenY = nuevoScreenY;
-            virtualCamera.GetCinemachineComponent<Cinemachine.CinemachineFramingTransposer>().m_BiasX = nuevoBiasX;
-            virtualCamera.GetCinemachineComponent<Cinemachine.CinemachineFramingTransposer>().m_BiasY = nuevoBiasY;
-            virtualCamera.GetCinemachineComponent<Cinemachine.CinemachineFramingTransposer>().m_SoftZoneHeight = nuevoSoftZoneHeight;
-        }
-        else
-        {
-            virtualCamera.GetCinemachineComponent<Cinemachine.CinemachineFramingTransposer>().m_ScreenX = screenX;
-            virtualCamera.GetCinemachineComponent<Cinemachine.CinemachineFramingTransposer>().m_ScreenY = screenY;
-            virtualCamera.GetCinemachineComponent<Cinemachine.CinemachineFramingTransposer>().m_BiasX = biasX;
-            virtualCamera.GetCinemachineComponent<Cinemachine.CinemachineFramingTransposer>().m_BiasX = biasY;
-            virtualCamera.GetCinemachineComponent<Cinemachine.CinemachineFramingTransposer>().m_SoftZoneHeight = softZoneHeight;
+            if (transform.position.x < playerTransform.position.x)
+            {
+                virtualCamera.GetCinemachineComponent<Cinemachine.CinemachineFramingTransposer>().m_ScreenX = nuevoScreenX;
+                virtualCamera.GetCinemachineComponent<Cinemachine.CinemachineFramingTransposer>().m_ScreenY = nuevoScreenY;
+                //virtualCamera.GetCinemachineComponent<Cinemachine.CinemachineFramingTransposer>().m_BiasX = nuevoBiasX;
+                //virtualCamera.GetCinemachineComponent<Cinemachine.CinemachineFramingTransposer>().m_BiasY = nuevoBiasY;
+                //virtualCamera.GetCinemachineComponent<Cinemachine.CinemachineFramingTransposer>().m_SoftZoneHeight = nuevoSoftZoneHeight;
+            }
+            else
+            {
+                virtualCamera.GetCinemachineComponent<Cinemachine.CinemachineFramingTransposer>().m_ScreenX = screenX;
+                virtualCamera.GetCinemachineComponent<Cinemachine.CinemachineFramingTransposer>().m_ScreenY = screenY;
+                //virtualCamera.GetCinemachineComponent<Cinemachine.CinemachineFramingTransposer>().m_BiasX = biasX;
+                //virtualCamera.GetCinemachineComponent<Cinemachine.CinemachineFramingTransposer>().m_BiasX = biasY;
+                //virtualCamera.GetCinemachineComponent<Cinemachine.CinemachineFramingTransposer>().m_SoftZoneHeight = softZoneHeight;
+            }
         }
     }
 }

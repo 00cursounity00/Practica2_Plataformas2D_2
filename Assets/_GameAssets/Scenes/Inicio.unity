@@ -461,7 +461,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Guardar
+  m_Text: Save
 --- !u!222 &260807282
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3718,7 +3718,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Cancelar
+  m_Text: Cancel
 --- !u!222 &2090902190
 CanvasRenderer:
   m_ObjectHideFlags: 0
