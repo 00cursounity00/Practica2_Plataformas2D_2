@@ -24,6 +24,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] Button botonSalir;
     [SerializeField] Button botonSaltar;
     [SerializeField] Button botonDisparar;
+    [SerializeField] Button botonPoder;
     [SerializeField] FixedJoystick fixedJoystick;
     [SerializeField]AudioClip[] audioClips;
 
@@ -194,6 +195,7 @@ public class UIManager : MonoBehaviour
 
     public void MostrarControlesTactiles()
     {
+        botonPoder.gameObject.SetActive(true);
         botonSaltar.gameObject.SetActive(true);
         botonDisparar.gameObject.SetActive(true);
         fixedJoystick.gameObject.SetActive(true);

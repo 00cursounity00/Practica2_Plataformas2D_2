@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LavaAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: ef4a0ec40caa6a94e8f2c9b1be7adb65, type: 3}
+    totalSpriteSurfaceArea: 57344
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 57ad45423aaa2a74292c82abb954b4f0, type: 3}
+  - {fileID: 21300000, guid: eb1c7655a24c7da4dbeaf06a4994c4ec, type: 3}
+  - {fileID: 21300000, guid: 719b31756fc22544cade226aa7b6bd6b, type: 3}
+  - {fileID: 21300000, guid: 26544db5b4bfd6e4cb4aae68b0cc8b2d, type: 3}
+  - {fileID: 21300000, guid: 6cc733c6cb4c15345b3a43d96bf7fdb5, type: 3}
+  - {fileID: 21300000, guid: 236df83807d354e4babf4e740aacf765, type: 3}
+  - {fileID: 21300000, guid: 454be3a9ecb07f44f9349a76ecf3955a, type: 3}
+  - {fileID: 21300000, guid: 7eb60f9d7c4054f4ba36afe1ea75077f, type: 3}
+  - {fileID: 21300000, guid: 4512f2bddc421684cad96b61c6a5cb5f, type: 3}
+  - {fileID: 21300000, guid: 5c18da1e9f3432544aa489b7dfc17776, type: 3}
+  - {fileID: 21300000, guid: 4db3b14e6ce9e664d8a7dd61ec080d9a, type: 3}
+  - {fileID: 21300000, guid: d3fbe65ebb8e1334b96744c9275fadd1, type: 3}
+  - {fileID: 21300000, guid: d06a75fec67f1bb479d4a70801559ceb, type: 3}
+  - {fileID: 21300000, guid: ca3fdd2fa8dab654f836078a40580a85, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - lava_tile9
+  - lava_tile3
+  - lava_tile7
+  - lava_tile8
+  - lava_tile6
+  - lava_tile12
+  - lava_tile10
+  - lava_tile5
+  - lava_tile13
+  - lava_tile11
+  - lava_tile1
+  - lava_tile2
+  - lava_tile14
+  - lava_tile4
+  m_Tag: LavaAtlas
+  m_IsVariant: 0

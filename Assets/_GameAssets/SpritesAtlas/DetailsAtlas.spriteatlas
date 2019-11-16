@@ -1,0 +1,210 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DetailsAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 1f4a35b00e7071f47b71f6a94c46ffb5, type: 3}
+    totalSpriteSurfaceArea: 673024
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 82052200e43b40546a9336847c3cc3da, type: 3}
+  - {fileID: 21300000, guid: ae9ace3068f802c47aa2868eee64c602, type: 3}
+  - {fileID: 21300000, guid: 98ce4e507b1d41f4bb55d0b4bcaa2f95, type: 3}
+  - {fileID: 21300000, guid: c16d026077923c44bb98d1bd9b82c01b, type: 3}
+  - {fileID: 21300000, guid: cc98f280350120444bcb08ef4d9da226, type: 3}
+  - {fileID: 21300000, guid: 2ca68c80cb306af4eb271f8d9757f603, type: 3}
+  - {fileID: 21300000, guid: 987820a09e3243e43bfe2b6636f2b29b, type: 3}
+  - {fileID: 21300000, guid: 6a8447b032a59254c8c83194f19d600a, type: 3}
+  - {fileID: 21300000, guid: 0b928ed054e96634da6f3ec38e34eafd, type: 3}
+  - {fileID: 21300000, guid: 24bb3b11942879947a7ff275a3bcf363, type: 3}
+  - {fileID: 21300000, guid: 34e7eb515d57b2e4b8dd2c90b1b1aa24, type: 3}
+  - {fileID: 21300000, guid: 2ab1397104914fc4aa690783e1d62dd3, type: 3}
+  - {fileID: 21300000, guid: d3f82791fe3bd054c90d8b8f36d6cb53, type: 3}
+  - {fileID: 21300000, guid: 0b711db1566141c4f98acf43f92ee791, type: 3}
+  - {fileID: 21300000, guid: d4a4e632c662d3446b806d30ea3625f9, type: 3}
+  - {fileID: 21300000, guid: 52f981428c9ec134c976dd0392e4ee2e, type: 3}
+  - {fileID: 21300000, guid: 07c66c52ea53972478f7cd5e688d0ee1, type: 3}
+  - {fileID: 21300000, guid: c1b7fb82ee646f240b3ed3f8baf2cc2c, type: 3}
+  - {fileID: 21300000, guid: b33e52d2905e84d4187d602fed0a9b3c, type: 3}
+  - {fileID: 21300000, guid: 1980fa130d85e674e90d099950ffd3eb, type: 3}
+  - {fileID: 21300000, guid: f5aaa333e1a936a459ac3585dc578a4f, type: 3}
+  - {fileID: 21300000, guid: 79277fb3f98dd574abf405ec1dbaf5ec, type: 3}
+  - {fileID: 21300000, guid: 45ba75d39d907de40aa649bec1bf4bd3, type: 3}
+  - {fileID: 21300000, guid: 27100bd38c3db2a4ca9f4241041de29a, type: 3}
+  - {fileID: 21300000, guid: 0ab03204b4a0ae0428526088e6790869, type: 3}
+  - {fileID: 21300000, guid: a5b88124c5ff6f54b94ccdd3e35ec609, type: 3}
+  - {fileID: 21300000, guid: af492f84ff5c8214eb8bf4ce1f0a064d, type: 3}
+  - {fileID: 21300000, guid: fb7d21a4582c01f41a7bb882905f45ac, type: 3}
+  - {fileID: 21300000, guid: 071060b418f44a149b739075ce99d97e, type: 3}
+  - {fileID: 21300000, guid: 1c5bd5e438a209e41bac1e54cfc9ecf1, type: 3}
+  - {fileID: 21300000, guid: 4b99f685c5340444799b00ea11a873bd, type: 3}
+  - {fileID: 21300000, guid: 438e9a950e974f04cb0f56f30e72e526, type: 3}
+  - {fileID: 21300000, guid: efde96e54ea5fcc49b6386e2e6cfcf4f, type: 3}
+  - {fileID: 21300000, guid: 389197060c89b5e47aa184bf8d6ca24a, type: 3}
+  - {fileID: 21300000, guid: 701d05763a2df89408f271bdcc80b3f2, type: 3}
+  - {fileID: 21300000, guid: 5aaed976a2eb225498cd40c485c0fa35, type: 3}
+  - {fileID: 21300000, guid: 8aa5b0864d2b07946b7d148529c2b66d, type: 3}
+  - {fileID: 21300000, guid: 28d438a63ea712541b5d948e458281c8, type: 3}
+  - {fileID: 21300000, guid: 3e586fe698d2157478ba17a636a03095, type: 3}
+  - {fileID: 21300000, guid: ab971df61e6f5a24daff11add7ca3420, type: 3}
+  - {fileID: 21300000, guid: 01c54ff6e21ff904b9a1052753e6ff64, type: 3}
+  - {fileID: 21300000, guid: fc580a17cf3f9ce439de3543fdea4803, type: 3}
+  - {fileID: 21300000, guid: 6afed98747e27494bba2404d98868e35, type: 3}
+  - {fileID: 21300000, guid: ad80e7e7bef90054ab945dbbc29b7d83, type: 3}
+  - {fileID: 21300000, guid: 74984a787f5e97f48849fcf8729abfda, type: 3}
+  - {fileID: 21300000, guid: 0d8c5ea8134e2fc4f8c6a8dedfed4e23, type: 3}
+  - {fileID: 21300000, guid: 7aea22193b94cd8419e73cc01a9dd215, type: 3}
+  - {fileID: 21300000, guid: 2630799939c12c44aae05ea7f88a596b, type: 3}
+  - {fileID: 21300000, guid: a8bda7d9b6c3695409ba29510089c61b, type: 3}
+  - {fileID: 21300000, guid: 2595c91a5d1ae7544ac96c96206a5f83, type: 3}
+  - {fileID: 21300000, guid: 0c01932ae9a1bc64b8810f035fae2782, type: 3}
+  - {fileID: 21300000, guid: 6c07b14a74666884b8f1d15b9b4f3718, type: 3}
+  - {fileID: 21300000, guid: 4b644c5a90429634ea2447188d6cee26, type: 3}
+  - {fileID: 21300000, guid: 4687ed8ac0230734fae574dec5b9d012, type: 3}
+  - {fileID: 21300000, guid: 1630189abd30f2c49a79b0f3b25fda45, type: 3}
+  - {fileID: 21300000, guid: cb4404bad73848d4aaa8f8b02939aaa9, type: 3}
+  - {fileID: 21300000, guid: 77b1553bbb971964b9a21c116fab162c, type: 3}
+  - {fileID: 21300000, guid: 2abc891c2434c6a4bb772974803554df, type: 3}
+  - {fileID: 21300000, guid: 0dd7294c44a2c0b42af9e80806e392cb, type: 3}
+  - {fileID: 21300000, guid: 0489d05c64d3c2e48ab7ee826da43660, type: 3}
+  - {fileID: 21300000, guid: 7aca8e8cbdcbef7438d2a5081c50075b, type: 3}
+  - {fileID: 21300000, guid: 0ee756ccd7d299346ba425ebb9264c9a, type: 3}
+  - {fileID: 21300000, guid: 2e1706ec2e1611c4fa088988e7080741, type: 3}
+  - {fileID: 21300000, guid: 2cbd80fcbd6a45d499a7e88906bf397b, type: 3}
+  - {fileID: 21300000, guid: b475ad1d58450274dbe119aa1401bb0c, type: 3}
+  - {fileID: 21300000, guid: f66b8e1d93d553941afbc8225487961c, type: 3}
+  - {fileID: 21300000, guid: 13c6ae3d6ab01e845b5c1ae2df67196b, type: 3}
+  - {fileID: 21300000, guid: bf6ad88df075ef94a8fe19e154e14f2e, type: 3}
+  - {fileID: 21300000, guid: 7ac186dd62495fd45849198c8165315f, type: 3}
+  - {fileID: 21300000, guid: cd5d050e92459234ab12f15bb5e23167, type: 3}
+  - {fileID: 21300000, guid: 0b90d22ee38733940b519e093c2bbe23, type: 3}
+  - {fileID: 21300000, guid: 29c57b3e8e0c03f408d0a1aadcec4b0b, type: 3}
+  - {fileID: 21300000, guid: 2a7654ae658987e4da4ac72fd2cb6baf, type: 3}
+  - {fileID: 21300000, guid: 8eb497be7b03ba94d819dd2ce541286b, type: 3}
+  - {fileID: 21300000, guid: 1c468bbe0796adc4a9b759426f826ce7, type: 3}
+  - {fileID: 21300000, guid: 956c08eecb1f6cb48a738ab6d0816cd4, type: 3}
+  - {fileID: 21300000, guid: f8b1380fb235bd54a90629705c7be29e, type: 3}
+  - {fileID: 21300000, guid: 6133426f19c72ab40a30661b7097be0f, type: 3}
+  - {fileID: 21300000, guid: 42bef86f355b0074fa25825c08248be2, type: 3}
+  - {fileID: 21300000, guid: 915ae68f981211445b279495d1f88e99, type: 3}
+  - {fileID: 21300000, guid: fbe70e9f942e66742a137fdafbbc3fc1, type: 3}
+  - {fileID: 21300000, guid: 1239e3afe1894674d8072e5b200ad08c, type: 3}
+  - {fileID: 21300000, guid: 838426af6770b5f488419696f6b18da0, type: 3}
+  - {fileID: 21300000, guid: 66d5f9ef6f12d504bbf4501dbc88f3ff, type: 3}
+  - {fileID: 21300000, guid: 6231fdef62ba17d4789df32ac5c1a207, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - lava_drop1_8
+  - torch2_3
+  - mushrum5
+  - torch1_3
+  - torch3_2
+  - lava_drop2_9
+  - trap5
+  - stalactite4
+  - trap1
+  - lava_drop3_7
+  - lava_drop2_8
+  - stalactite5
+  - bridge1
+  - torch3_1
+  - marker_statue4
+  - mushrum1
+  - torch3_3
+  - lava_drop3_3
+  - stair1
+  - lava_drop3_9
+  - torch2_1
+  - torch1_1
+  - lava_drop2_1
+  - lava_drop1_10
+  - stair3
+  - trap2
+  - hole2
+  - mushrum4
+  - trap4
+  - torch2_4
+  - stalagmite3
+  - lava_drop2_4
+  - stalactite2
+  - torch1_4
+  - stalactite1
+  - bridge3
+  - bridge2
+  - lava_drop3_4
+  - hole1
+  - lava_drop3_1
+  - lava_drop2_3
+  - stalagnate1
+  - marker_statue3
+  - torch3_4
+  - chest
+  - stalagmite1
+  - marker_statue5
+  - stalactite3
+  - stalagnate2
+  - lava_drop1_1
+  - torch1_2
+  - marker_statue6
+  - torch2_2
+  - mushrum3
+  - door 1
+  - mushrum6
+  - lava_drop1_9
+  - stair2
+  - lava_drop3_8
+  - trap3
+  - lava_drop1_3
+  - trap6
+  - lava_drop2_6
+  - lava_drop3_5
+  - spikes
+  - lava_drop3_6
+  - lava_drop1_6
+  - lava_drop2_7
+  - door
+  - mushrum2
+  - stalagnate3
+  - lava_drop1_7
+  - stalagmite5
+  - blanco
+  - lava_drop1_5
+  - lava_drop3_2
+  - stalagmite4
+  - marker_statue1
+  - marker_statue2
+  - stalagmite2
+  - lava_drop2_2
+  - lava_drop1_4
+  - mushrum7
+  - lava_drop1_2
+  - lava_drop2_5
+  m_Tag: DetailsAtlas
+  m_IsVariant: 0

@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ExplosionesAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: a31bc18bdee60ff48b9c91d7dbf94bde, type: 3}
+    totalSpriteSurfaceArea: 40696
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -1898675755319734956, guid: 99a960ba50f87a347a77239219e8ba78, type: 3}
+  - {fileID: -7837246033620017910, guid: 99a960ba50f87a347a77239219e8ba78, type: 3}
+  - {fileID: 209345294640714886, guid: 99a960ba50f87a347a77239219e8ba78, type: 3}
+  - {fileID: 503119944557002047, guid: 99a960ba50f87a347a77239219e8ba78, type: 3}
+  - {fileID: 8483144357699824937, guid: 99a960ba50f87a347a77239219e8ba78, type: 3}
+  - {fileID: -8502256226961236798, guid: 99a960ba50f87a347a77239219e8ba78, type: 3}
+  - {fileID: 2918585622072878835, guid: 99a960ba50f87a347a77239219e8ba78, type: 3}
+  - {fileID: 5424955571231344341, guid: 99a960ba50f87a347a77239219e8ba78, type: 3}
+  - {fileID: -3002963831257968858, guid: 99a960ba50f87a347a77239219e8ba78, type: 3}
+  - {fileID: -7389632154034667571, guid: 99a960ba50f87a347a77239219e8ba78, type: 3}
+  - {fileID: 4995888247233883584, guid: 99a960ba50f87a347a77239219e8ba78, type: 3}
+  - {fileID: -6042887214949195682, guid: 99a960ba50f87a347a77239219e8ba78, type: 3}
+  - {fileID: -3552797447819321893, guid: eefc143eb0eb4574a899922e4bcebddd, type: 3}
+  - {fileID: 7891355093134786925, guid: eefc143eb0eb4574a899922e4bcebddd, type: 3}
+  - {fileID: 5279103960210251009, guid: eefc143eb0eb4574a899922e4bcebddd, type: 3}
+  - {fileID: -7710477902799351129, guid: eefc143eb0eb4574a899922e4bcebddd, type: 3}
+  - {fileID: 4908590939966908423, guid: eefc143eb0eb4574a899922e4bcebddd, type: 3}
+  - {fileID: -855576432637206212, guid: eefc143eb0eb4574a899922e4bcebddd, type: 3}
+  - {fileID: -3360684932759000943, guid: eefc143eb0eb4574a899922e4bcebddd, type: 3}
+  - {fileID: 7068823585462570278, guid: eefc143eb0eb4574a899922e4bcebddd, type: 3}
+  - {fileID: 6834376297753823711, guid: eefc143eb0eb4574a899922e4bcebddd, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - explosines2_5
+  - explosines2_2
+  - explosines2_3
+  - explosines2_0
+  - explosines2_1
+  - explosines2_8
+  - explosines2_9
+  - explosines2_11
+  - explosines2_10
+  - explosines2_6
+  - explosines2_7
+  - explosines2_4
+  - explosiones_1
+  - explosiones_0
+  - explosiones_3
+  - explosiones_2
+  - explosiones_5
+  - explosiones_4
+  - explosiones_7
+  - explosiones_6
+  - explosiones_8
+  m_Tag: ExplosionesAtlas
+  m_IsVariant: 0

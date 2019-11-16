@@ -43,6 +43,7 @@ public class Player : MonoBehaviour
     private const int AUDIO_EXPLOSION = 2;
     private const int AUDIO_DANO = 3;
     private const int AUDIO_DISPARO_2 = 4;
+    private const int AUDIO_PODER = 5;
 
 
     //Metodos MonoBehaviour
@@ -62,7 +63,6 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        print(rb.velocity);
         ObtenerEnSuelo();
 
         if (Input.GetButtonDown("Fire1"))
@@ -243,8 +243,8 @@ public class Player : MonoBehaviour
         animator.SetBool("enSuelo", false);
         return false;
     }
-    
-    private void ActivarPoder()
+
+    public void ActivarPoder()
     {
         if (estadoPlayer != EstadoPlayer.teletransportandose && estadoPlayer != EstadoPlayer.empezandoAJugar && estadoPlayer != EstadoPlayer.inmune && gm.ObtenerPoder() > 0 && !animator.GetBool("recibiendoDano"))
         {
@@ -255,12 +255,13 @@ public class Player : MonoBehaviour
             efectoPoder.SetActive(true);
             estadoPlayer = EstadoPlayer.inmune;
             poderActivado = true;
+            audios[AUDIO_PODER].Play();
             gm.ActivarPoder();
-            Invoke("CancelarPoder", gm.ObtenerPoder());
+            //Invoke("CancelarPoder", gm.ObtenerPoder());
         }
     }
 
-    private void CancelarPoder()
+    public void CancelarPoder()
     {
         efectoPoder.SetActive(false);
         GetComponent<SpriteRenderer>().color = new Color(1, 1, 1);
@@ -269,11 +270,11 @@ public class Player : MonoBehaviour
         DOTween.KillAll();
     }
 
-    public void AumentarTiempoPoder()
+    /*public void AumentarTiempoPoder()
     {
         CancelInvoke("CancelarPoder");
         Invoke("CancelarPoder", gm.ObtenerPoder());
-    }
+    }*/
 
     private void Mover(float velocidadX)
     {

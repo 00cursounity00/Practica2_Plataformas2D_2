@@ -311,6 +311,10 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(1);
             poder--;
             ui.ActualizarPoder(poder / poderMax);
+            if (poder == 0)
+            {
+                player.CancelarPoder();
+            }
         }
     }
 }
