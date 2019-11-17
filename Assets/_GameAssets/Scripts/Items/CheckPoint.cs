@@ -17,7 +17,9 @@ public class CheckPoint : MonoBehaviour
         {
             gm.GuardarPosicion(transform.position);
             gm.ActivarCheckpoint();
+            gm.ResetearCuentaAtras();
             GetComponent<Animator>().SetBool("checkPoinActivado", true);
+            GetComponent<AudioSource>().Play();
             Destroy(this);
         }
     }

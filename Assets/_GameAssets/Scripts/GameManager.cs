@@ -285,6 +285,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void ResetearCuentaAtras()
+    {
+        tiempo = tiempoMax;
+    }
+
     public void SumarVida()
     {
         if (numeroVidas < numeroVidasMax)

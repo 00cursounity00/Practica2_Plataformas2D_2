@@ -7,8 +7,12 @@ public class DropedLava : MonoBehaviour
     [SerializeField] float dano;
     [SerializeField] float fuerza;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+        print(collision.name + "  -  " + collision.tag);  
+
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
         if (collision.gameObject.CompareTag("Player"))
         {
             if (collision.gameObject.transform.position.x > transform.position.x)

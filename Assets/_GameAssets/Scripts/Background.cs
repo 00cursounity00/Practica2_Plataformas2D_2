@@ -128,13 +128,13 @@ public class Background : MonoBehaviour
             //print("playerX: " + playerTransform.position.x + "  --  x:" + transform.position.x + "  --  Find:" + GameObject.Find(nombreBgLeft));
             if (difX > distanciaSpawnRight && GameObject.Find(nombreBgRight) == null)
             {
-                GameObject go = Instantiate(gameObject, new Vector2(transform.position.x + 64f, transform.position.y), transform.rotation, transform.parent);
+                GameObject go = Instantiate(gameObject, new Vector2(transform.position.x + 63.8f, transform.position.y), transform.rotation, transform.parent);
                 go.name = nombreBgRight;
                 go.GetComponent<Background>().EstablecrBg(numeroBg + 1, nombreBgBase);
             }
             else if (difX < -distanciaSpawnLeft && GameObject.Find(nombreBgLeft) == null)
             {
-                GameObject go = Instantiate(gameObject, new Vector2(transform.position.x - 64f, transform.position.y), transform.rotation, transform.parent);
+                GameObject go = Instantiate(gameObject, new Vector2(transform.position.x - 63.8f, transform.position.y), transform.rotation, transform.parent);
                 go.name = nombreBgLeft;
                 go.GetComponent<Background>().EstablecrBg(numeroBg - 1, nombreBgBase);
             }
