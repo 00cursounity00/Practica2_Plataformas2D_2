@@ -7,6 +7,7 @@ public class Bomba : MonoBehaviour
     [SerializeField] GameObject explosion;
     [SerializeField] float dano;
     [SerializeField] float fuerza;
+
     private Animator animator;
     private bool bombaActiva = false;
 
@@ -14,6 +15,7 @@ public class Bomba : MonoBehaviour
     {
         animator = GetComponent<Animator>();
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player") && !bombaActiva)

@@ -7,6 +7,7 @@ public class Pocion : MonoBehaviour
     [SerializeField] int tipo;
     [SerializeField] float cantidad;
     [SerializeField] AudioClip sonido;
+
     private GameManager gm;
     private bool recogida = false;
     private AudioSource itemSounds;
@@ -32,12 +33,8 @@ public class Pocion : MonoBehaviour
             else if (tipo == 1)
             {
                 gm.RecargarPoder(cantidad);
-
-                /*if (collision.gameObject.GetComponent<Player>().ObtenerPoderActivado())
-                {
-                    collision.gameObject.GetComponent<Player>().AumentarTiempoPoder();
-                }*/
             }
+
             Destroy(gameObject);
         }
     }

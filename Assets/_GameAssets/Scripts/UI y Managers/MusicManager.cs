@@ -7,6 +7,7 @@ public class MusicManager : MonoBehaviour
 {
     [SerializeField] Slider volumenSlider;
     [SerializeField] Text VolumenTexto;
+
     private AudioSource audioSource;
 
     void Awake()

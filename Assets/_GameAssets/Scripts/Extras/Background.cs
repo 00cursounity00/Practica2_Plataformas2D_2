@@ -16,6 +16,7 @@ public class Background : MonoBehaviour
     [SerializeField] float distanciaDestruccionLeft;
     [SerializeField] GameObject player;
     [SerializeField] string nombreBgBase, nombreBgRight, nombreBgLeft;
+
     private Transform playerTransform;
     private Rigidbody2D playerRb;
     private float x, y, factorX, factorY, difX, difY, posicionX, posicionY;
@@ -27,7 +28,6 @@ public class Background : MonoBehaviour
         playerTransform = player.GetComponent<Transform>();
         posicionX = playerTransform.position.x;
         posicionY = playerTransform.position.y;
-        //print(posicionX + "  --  " + transform.position.x);
         virtualCameraTransform = GameObject.FindGameObjectWithTag("CamaraVirtual").transform;
     }
 
@@ -125,7 +125,7 @@ public class Background : MonoBehaviour
             }
 
             difX = playerTransform.position.x - transform.position.x;
-            //print("playerX: " + playerTransform.position.x + "  --  x:" + transform.position.x + "  --  Find:" + GameObject.Find(nombreBgLeft));
+            
             if (difX > distanciaSpawnRight && GameObject.Find(nombreBgRight) == null)
             {
                 GameObject go = Instantiate(gameObject, new Vector2(transform.position.x + 63.8f, transform.position.y), transform.rotation, transform.parent);

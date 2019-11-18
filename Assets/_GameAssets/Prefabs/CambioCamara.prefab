@@ -73,6 +73,4 @@ MonoBehaviour:
   virtualCamera: {fileID: 0}
   nuevoScreenX: 0.5
   nuevoScreenY: 0.4
-  nuevoBiasX: 0
-  nuevoBiasY: 0.5
-  nuevoSoftZoneHeight: 0.4
+  velocidadCambio: 0.2

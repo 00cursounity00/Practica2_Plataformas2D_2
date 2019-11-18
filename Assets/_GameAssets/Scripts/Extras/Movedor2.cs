@@ -10,6 +10,7 @@ public class Movedor2 : MonoBehaviour
     [SerializeField] float velocidad;
     [SerializeField] float distanciaDespertar;
     [SerializeField] int direccion;
+
     private float porcentaje = 0;
     private SpriteRenderer sr;
     private bool despertado = false;
@@ -23,6 +24,7 @@ public class Movedor2 : MonoBehaviour
     void Update()
     {
         Collider2D[] cds = Physics2D.OverlapCircleAll(transform.position, distanciaDespertar);
+
         foreach (Collider2D cd in cds)
         {
             if (cd.gameObject.GetComponent<Player>() != null)
@@ -39,15 +41,12 @@ public class Movedor2 : MonoBehaviour
             if (porcentaje >= 1 || porcentaje <= 0)
             {
                 direccion *= -1;
-                //transform.localScale = new Vector2(Mathf.Abs(transform.localScale.x) * direccion, transform.localScale.y);
-                //transform.localScale = new Vector2(direccion, 1); Solo si la escala es 1/1/1
                 porcentaje = Mathf.Clamp(porcentaje, 0, 1f);
                 sr.flipX = !sr.flipX;
 
                 if (primeraVez)
                 {
                     origen = destino2;
-                    //destino1 = destino2;
                     primeraVez = false;
                 }
             }

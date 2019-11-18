@@ -6,6 +6,7 @@ public class Moneda : MonoBehaviour
 {
     [SerializeField] int puntos;
     [SerializeField] AudioClip sonido;
+
     private GameManager gm;
     private bool recogido = false;
     private AudioSource itemSounds;

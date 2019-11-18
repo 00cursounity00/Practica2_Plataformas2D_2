@@ -5,6 +5,7 @@ using UnityEngine;
 public class Teletransporte : MonoBehaviour
 {
     [SerializeField] Transform destinoTransform;
+
     private bool teletransportandose = false;
 
     private void OnTriggerEnter2D(Collider2D collision)

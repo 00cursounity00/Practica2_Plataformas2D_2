@@ -6,11 +6,13 @@ public class Proyectil : MonoBehaviour
 {
     [SerializeField] float dano;
     [SerializeField] float tiempoDestruccion;
+
     private int direccion;
 
     private void Start()
     {
         Destroy(this.gameObject, tiempoDestruccion);
+
         if (GameObject.FindGameObjectsWithTag("Player")[0].transform.position.x > 0)
         {
             direccion = -1;
@@ -27,11 +29,7 @@ public class Proyectil : MonoBehaviour
         {
             collision.gameObject.GetComponent<Enemigo>().RecibirDano(dano);
         }
+
         Destroy(gameObject);
     }
-    /*
-    private void Update()
-    {
-        transform.Rotate(Vector3.forward * Time.deltaTime * angularSpeed * direccion);
-    }*/
 }

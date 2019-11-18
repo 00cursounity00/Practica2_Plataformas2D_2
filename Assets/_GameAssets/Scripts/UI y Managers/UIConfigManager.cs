@@ -10,19 +10,33 @@ public class UIConfigManager : MonoBehaviour
     [SerializeField] Toggle controlesTactiles;
     [SerializeField] Slider volumenSlider;
     [SerializeField] Text VolumenTexto;
+    [SerializeField] Button jugarBoton;
+    [SerializeField] Button opcionesBoton;
+    [SerializeField] Button salirBoton;
     [SerializeField] Button guardarBoton;
+    [SerializeField] Button cancelarBoton;
 
     public const string SONIDO = "SONIDO";
     public const string VOLUMEN = "VOLUMEN";
     public const string CONTROLES_TACTILES = "CONTROLES_TACTILES";
-    public const string MEJOR_PUNTUACION_1_1 = "MEJOR_PUNTUACION_1_1";
+    public const string MEJOR_PUNTUACION_1 = "MEJOR_PUNTUACION_1";
+    public const string MEJOR_PUNTUACION_2 = "MEJOR_PUNTUACION_2";
+    public const string MEJOR_PUNTUACION_3 = "MEJOR_PUNTUACION_3";
+    public const string MEJOR_PUNTUACION_4 = "MEJOR_PUNTUACION_4";
+    public const string MEJOR_PUNTUACION_5 = "MEJOR_PUNTUACION_5";
+    public const string MEJOR_PUNTUACION_6 = "MEJOR_PUNTUACION_6";
+    public const string MEJOR_PUNTUACION_7 = "MEJOR_PUNTUACION_7";
+    public const string MEJOR_PUNTUACION_8 = "MEJOR_PUNTUACION_8";
+    public const string MEJOR_PUNTUACION_9 = "MEJOR_PUNTUACION_9";
+    public const string MEJOR_PUNTUACION_10 = "MEJOR_PUNTUACION_10";
     public const string CHECKPOINT_ACTIVO = "CHECKPOINT_ACTIVO";
+    public const string PARAM_X = "x";
+    public const string PARAM_Y = "y";
     public const string NIVEL_EMPEZADO = "NIVEL_EMPEZADO";
     public const string NIVEL_ACTUAL = "NIVEL_ACTUAL";
     public const string PANTALLA_ACTUAL = "PANTALLA_ACTUAL";
-    public const string PARAM_X = "x";
-    public const string PARAM_Y = "y";
     public const string VIDAS = "VIDAS";
+    public const string PODER = "PODER";
 
     private void Start()
     {
@@ -42,6 +56,7 @@ public class UIConfigManager : MonoBehaviour
         PlayerPrefs.DeleteKey(PARAM_X);
         PlayerPrefs.DeleteKey(PARAM_Y);
         PlayerPrefs.DeleteKey(VIDAS);
+        PlayerPrefs.DeleteKey(PODER);
         PlayerPrefs.Save();
     }
 
@@ -61,8 +76,55 @@ public class UIConfigManager : MonoBehaviour
         CargarOpciones();
     }
 
-    public void Saltar()
+    // EFECTOS BOTONES
+
+    public void AgrandarJugar()
     {
-        guardarBoton.transform.DOScale(1.1f,0.3f).SetLoops(-1, LoopType.Yoyo);
+        jugarBoton.transform.DOScale(1.2f, 0);
+    }
+
+    public void AgrandarOpciones()
+    {
+        opcionesBoton.transform.DOScale(1.2f, 0);
+    }
+
+    public void AgrandarSalir()
+    {
+        salirBoton.transform.DOScale(1.2f, 0);
+    }
+
+    public void AgrandarGuardar()
+    {
+        guardarBoton.transform.DOScale(1.2f, 0);
+    }
+
+    public void AgrandarCancelar()
+    {
+        cancelarBoton.transform.DOScale(1.2f, 0);
+    }
+
+    public void EncogerJugar()
+    {
+        jugarBoton.transform.DOScale(1, 0);
+    }
+
+    public void EncogerOpciones()
+    {
+        opcionesBoton.transform.DOScale(1, 0);
+    }
+
+    public void EncogerSalir()
+    {
+        salirBoton.transform.DOScale(1, 0);
+    }
+
+    public void EncogerGuardar()
+    {
+        guardarBoton.transform.DOScale(1, 0);
+    }
+
+    public void EncogerCancelar()
+    {
+        cancelarBoton.transform.DOScale(1, 0);
     }
 }

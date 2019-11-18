@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tipo: 1
-  cantidad: 20
+  cantidad: 2
   sonido: {fileID: 8300000, guid: 7db9096ce14ab224fa2151fe1686d60a, type: 3}
 --- !u!50 &9211074200035885223
 Rigidbody2D:

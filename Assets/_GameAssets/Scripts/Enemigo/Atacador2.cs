@@ -6,8 +6,7 @@ public class Atacador2 : MonoBehaviour
 {
     [SerializeField] float dano;
     [SerializeField] float tiempoEntreAtaques;
-    //[SerializeField] Transform puntoDisparo;
-    //[SerializeField] GameObject prefabSlash;
+
     private bool atacando = false;
 
     void Start()
@@ -26,20 +25,19 @@ public class Atacador2 : MonoBehaviour
         }
     }
 
+    public void QuitarAtacando()
+    {
+        atacando = false;
+    }
+
     private IEnumerator Atacar()
     {
         while (true)
         {
             yield return new WaitForSeconds(tiempoEntreAtaques);
-            //Instantiate(prefabSlash, puntoDisparo.position, puntoDisparo.rotation);
             GetComponent<Animator>().SetTrigger("atacar");
             atacando = true;
         }
 
-    }
-
-    public void QuitarAtacando()
-    {
-        atacando = false;
-    }
+    }    
 }

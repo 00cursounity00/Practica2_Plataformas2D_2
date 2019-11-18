@@ -5,6 +5,7 @@ using UnityEngine;
 public class Vida: MonoBehaviour
 {
     [SerializeField] AudioClip sonido;
+
     private GameManager gm;
     private bool recogida = false;
     private AudioSource itemSounds;

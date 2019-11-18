@@ -7,8 +7,6 @@ using DG.Tweening;
 public class UIManager : MonoBehaviour
 {
     [SerializeField] Canvas canvas;
-    //[SerializeField] GameObject panelCorazones;
-    //[SerializeField] GameObject prefabCorazon;
     [SerializeField] Text textoPuntuacion;
     [SerializeField] Text textoPuntuacionMax;
     [SerializeField] Text textoVidas;
@@ -26,32 +24,22 @@ public class UIManager : MonoBehaviour
     [SerializeField] Button botonDisparar;
     [SerializeField] Button botonPoder;
     [SerializeField] FixedJoystick fixedJoystick;
-    [SerializeField]AudioClip[] audioClips;
+    [SerializeField] AudioClip[] audioClips;
 
     private GameManager gm;
     private Player player;
     private string tituloNivelString, subtituloNivelString;
+    private int puntuacionActual;
+    private int vidasActuales;
+    private int tiempoActual;
 
     void Start()
     {
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         player = GameObject.Find("Yago").GetComponent<Player>();
-        //textoGameOver.gameObject.SetActive(true);
-        //botonReintentar.gameObject.SetActive(true);
-        //botonAtras.gameObject.SetActive(true);
-        //textoPuntuacion = GameObject.Find("TextoPuntuacionActual").GetComponent<Text>();
-        //textoPuntuacionMax = GameObject.Find("TextoMejorPuntuacionActual").GetComponent<Text>();
-        //textoVidas = GameObject.Find("TextoVidas").GetComponent<Text>();
-        //textoTiempo = GameObject.Find("TextoTiempoRestante").GetComponent<Text>();
-        //sliderVida = GameObject.Find("SliderVidaPlayer").GetComponent<Slider>();
-        //sliderPoder = GameObject.Find("SliderPoder").GetComponent<Slider>();
-        /*int numeroCorazonesActuales = gm.GetNumeroCorazones();
-
-        for(int i = 0; i < numeroCorazonesActuales; i++)
-        {
-            Instantiate(prefabCorazon, panelCorazones.transform);
-        }*/
     }
+
+    // ACTUALIZACION UI
 
     public void ActualizarVidas(int numeroVidas)
     {
@@ -60,12 +48,6 @@ public class UIManager : MonoBehaviour
 
     public void ActualizarVida(float vida)
     {
-        //GameObject[] corazones = GameObject.FindGameObjectsWithTag("ContenedorSalud");
-        //GameObject ultimoCorazon = corazones[numeroCorazones - 1];
-        //Image imagenultimoCorazon = ultimoCorazon.GetComponent<Image>();
-        //imagenultimoCorazon.fillAmount = vidaCorazon;
-        //GameObject.FindGameObjectsWithTag("ContenedorSalud")[numeroCorazones - 1].GetComponent<Image>().fillAmount = vidaCorazon;
-
         sliderVida.value = vida;
         if (vida <= 0.5f)
         {
@@ -97,36 +79,20 @@ public class UIManager : MonoBehaviour
         textoPuntuacionMax.text = puntuacionMax.ToString();
     }
 
-    /*public void ResetVida()
+    public void MostrarControlesTactiles()
     {
-        GameObject[] corazones = GameObject.FindGameObjectsWithTag("ContenedorSalud");
-        foreach (GameObject corazon in corazones)
-        {
-            corazon.GetComponent<Image>().fillAmount = 1;
-        }
-    }*/
+        botonPoder.gameObject.SetActive(true);
+        botonSaltar.gameObject.SetActive(true);
+        botonDisparar.gameObject.SetActive(true);
+        fixedJoystick.gameObject.SetActive(true);
+    }
 
     public void FundirNegro(float alpha, float tiempo)
     {
-        pantallaNegra.CrossFadeAlpha (alpha, tiempo, true);
+        pantallaNegra.CrossFadeAlpha(alpha, tiempo, true);
     }
 
-    public void MostrarGameOver()
-    {
-        botonSaltar.gameObject.SetActive(false);
-        botonDisparar.gameObject.SetActive(false);
-        fixedJoystick.gameObject.SetActive(false);
-        textoPrincipal.gameObject.SetActive(true);
-        textoPrincipal.text = "GAME OVER";
-        botonReintentar.gameObject.SetActive(true);
-        botonSalir.gameObject.SetActive(true);
-        pantallaNegra.CrossFadeAlpha(1, 2, true);
-        textoPrincipal.transform.DOScale(1, 2);
-        Sequence s = DOTween.Sequence();
-        s.Append(botonReintentar.transform.DOScale(1.2f, 1));
-        s.Append(botonReintentar.transform.DOShakeScale(1));
-        botonSalir.transform.DOScale(1, 2);
-    }
+    // COMIENZO CAPITULO
 
     public void MostrarCapituloYNivel (string tituloCapitulo, string subtituloCapitulo, string tituloNivel, string subtituloNivel)
     {
@@ -166,6 +132,8 @@ public class UIManager : MonoBehaviour
         textoSecundario.gameObject.SetActive(false);
     }
 
+    // COMIENZO NIVEL
+
     public void MostrarNivel(string tituloNivel, string subtituloNivel)
     {
         textoPrincipal.gameObject.SetActive(true);
@@ -193,11 +161,75 @@ public class UIManager : MonoBehaviour
         player.estadoPlayer = Player.EstadoPlayer.normal;
     }
 
-    public void MostrarControlesTactiles()
+    // GAME OVER
+
+    public void MostrarGameOver()
     {
-        botonPoder.gameObject.SetActive(true);
-        botonSaltar.gameObject.SetActive(true);
-        botonDisparar.gameObject.SetActive(true);
-        fixedJoystick.gameObject.SetActive(true);
+        botonSaltar.gameObject.SetActive(false);
+        botonDisparar.gameObject.SetActive(false);
+        botonPoder.gameObject.SetActive(false);
+        fixedJoystick.gameObject.SetActive(false);
+        pantallaNegra.CrossFadeAlpha(1, 1, true);
+        Invoke("TerminarMostrarGameOver", 1);
+    }
+
+    public void TerminarMostrarGameOver()
+    {
+        textoPrincipal.gameObject.SetActive(true);
+        textoPrincipal.text = "GAME OVER";
+        botonReintentar.gameObject.SetActive(true);
+        botonSalir.gameObject.SetActive(true);
+        textoPrincipal.transform.DOScale(1, 0.5f);
+        Sequence s = DOTween.Sequence();
+        s.Append(botonReintentar.transform.DOScale(1, 1));
+        s.Append(botonReintentar.transform.DOShakeScale(1));
+        botonSalir.transform.DOScale(1, 2);
+    }
+
+    //NIVEL COMPLETADO
+
+    public void MostrarNivelCompletado(int puntuacion, int vidas, int tiempo)
+    {
+        botonSaltar.gameObject.SetActive(false);
+        botonDisparar.gameObject.SetActive(false);
+        botonPoder.gameObject.SetActive(false);
+        fixedJoystick.gameObject.SetActive(false);
+        pantallaNegra.CrossFadeAlpha(1, 1, true);
+        Invoke("TerminarMostrarNivelCompletado", 1);
+    }
+
+    public void TerminarMostrarNivelCompletado()
+    {
+        textoPrincipal.gameObject.SetActive(true);
+        textoPrincipal.text = "STAGE CLEAR";
+        botonReintentar.gameObject.SetActive(true);
+        botonSalir.gameObject.SetActive(true);
+        textoPrincipal.transform.DOScale(1, 0.5f);
+        Sequence s = DOTween.Sequence();
+        s.Append(botonReintentar.transform.DOScale(1, 1));
+        s.Append(botonReintentar.transform.DOShakeScale(1));
+        botonSalir.transform.DOScale(1, 2);
+    }
+
+    // EFECTOS BOTONES
+
+    public void AgrandarReintentar()
+    {
+        botonReintentar.transform.DOScale(1.2f, 0);
+    }
+
+    public void AgrandarSalir()
+    {
+        botonSalir.transform.DOScale(1.2f, 0);
+    }
+
+    public void EncogerReintentar()
+    {
+        botonReintentar.transform.DOScale(1, 0);
+    }
+
+    public void EncogerSalir()
+    {
+        botonSalir.transform.DOScale(1, 0);
     }
 }

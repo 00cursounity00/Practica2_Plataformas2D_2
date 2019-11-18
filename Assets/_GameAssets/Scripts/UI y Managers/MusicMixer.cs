@@ -5,6 +5,7 @@ using UnityEngine;
 public class MusicMixer : MonoBehaviour
 {
     [SerializeField] AudioClip music;
+
     private GameObject musicManager;
 
     void Start()
